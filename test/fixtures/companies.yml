@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyText
+  Address: MyText
+  NIF: MyString
+  CreatedBy: 
+  UpdatedBy: 
+
+two:
+  Name: MyText
+  Address: MyText
+  NIF: MyString
+  CreatedBy: 
+  UpdatedBy: 

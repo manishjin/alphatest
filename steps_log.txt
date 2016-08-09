@@ -1,0 +1,99 @@
+1. Updated config-> routes.rb, application.scss, application.js
+
+2. Created controller Pages with 3 actions- home, about, contact
+
+3. Created 3 resources: companies, employees, shipments
+
+4. Generated scaffold 
+	rails g scaffold company Name:text Address:text NIF:string CreatedBy:string UpdatedBy:string
+
+	a) It creates the following 
+		* Model - Company
+		* Resources - companies
+		* DB Migrate - create_companies.rb
+		* Controller - companies
+		* Views for Companies (.html.erb)
+			-> index, edit, show, new, _form
+		* CSS file - companies.scss
+
+5. Run DB migration to create the companies table
+
+6. Installed Footable, used Agency theme css files and html files.
+
+7. Created new model for Clients
+rails g scaffold client Name:text Address:text Type:string Billing_Address:text NIF:string Verified:boolean company:references
+	
+	a) It creates the following
+	* DB Migrate - 20160806102802_create_clients.rb
+	* Model - client.rb
+	* Resources - resources :clients
+	* Controller - clients_controller.rb
+	* Views for Clients (.html.erb)
+		-> index, edit, show, new, _form
+	* CSS file - clients.scss
+
+	b) Modified model for companies, added has_many association
+
+8) Created new model for Employees
+rails g scaffold employee First_Name:string Last_Name:string Telephone:integer Email:string Designation:string Social_Sec:string Country:string company:references
+	
+	a) It creates the following
+		* DB Migrate - 20160806104351_create_employees.rb
+		* Model - employee.rb
+		* Resources - resources :employees
+		* Controller - employees_controller.rb
+		* Views for employees (.html.erb)
+			-> index, edit, show, new, _form
+		* CSS file - employees.scss
+
+	b) Modified model for companies, added has_many association
+
+9) Created new model for Drivers
+rails g scaffold driver First_Name:string Last_Name:string Telephone:integer Email:string Truck_No:string Social_Sec:string Verified:boolean company:references
+	
+	a) It creates the following
+		* DB Migrate - 20160806105043_create_drivers.rb
+		* Model - driver.rb
+		* Resources - resources :drivers
+		* Controller - drivers_controller.rb
+		* Views for drivers (.html.erb)
+			-> index, edit, show, new, _form
+		* CSS file - drivers.scss
+
+	b) Modified model for companies, added has_many association
+
+10) Created new model for Shipments
+rails g scaffold shipment Sub_Shipment:boolean Parent_Shipment_ID:integer Status:string Client_ID:integer Client_Name:text Pickup_Location:text Pickup_Date:date Pickup_Start_Time:time Pickup_End_Time:time Pickup_Gate:integer Pickup_Contact_Person:string Pickup_Contact_No:integer Weight:integer Palletized:boolean No_of_Pallets:integer Dropoff_Location:text Dropoff_Date:date Dropoff_Start_Time:time Dropff_End_Time:time Dropoff_Gate:integer Dropoff_Contact_Person:string Dropff_Contact_No:integer Comments:text Cargo_Type:text company:references
+	
+	a) It creates the following
+		* DB Migrate - 20160806112557_create_shipments.rb
+		* Model - shipment.rb
+		* Resources - resources :shipments
+		* Controller - shipments_controller.rb
+		* Views for shipments (.html.erb)
+			-> index, edit, show, new, _form
+		* CSS file - shipments.scss
+
+	b) Modified model for companies, added has_many association
+
+11) Executed the DB Migrations to create the tables
+	rake db:migrate
+
+12) Footable will remove inner content. To display, it make changes mentioned below
+http://stackoverflow.com/questions/33138368/footable-removing-inner-content
+
+In  $create: function(){, 
+
+CHANGE 
+.contents().detach().end()
+.append(this.format(this.value));
+
+TO
+.contents();
+
+ALSO,
+ .append($('<th/>', { text: this.column.title }))
+TO
+.append($('<th/>').append(this.column.title))
+
+13) 

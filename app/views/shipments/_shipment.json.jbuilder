@@ -1,0 +1,2 @@
+json.extract! shipment, :id, :Sub_Shipment, :Parent_Shipment_ID, :Status, :Client_ID, :Client_Name, :Pickup_Location, :Pickup_Date, :Pickup_Start_Time, :Pickup_End_Time, :Pickup_Gate, :Pickup_Contact_Person, :Pickup_Contact_No, :Weight, :Palletized, :No_of_Pallets, :Dropoff_Location, :Dropoff_Date, :Dropoff_Start_Time, :Dropff_End_Time, :Dropoff_Gate, :Dropoff_Contact_Person, :Dropff_Contact_No, :Comments, :Cargo_Type, :company_id, :created_at, :updated_at
+json.url shipment_url(shipment, format: :json)

@@ -1,0 +1,24 @@
+<!-- Ensure there is @company object present -->
+<ul class="sidebar-nav">
+    <li class="sidebar-brand">
+        <a href="/">Home</a>
+    </li>
+    <li class="sidebar-brand">
+        <a href="/companies">Companies</a>
+    </li>
+    <li>
+        <%= link_to 'Dashboard', company_path(@company) %>
+    </li>
+    <li>
+        <%= link_to 'Clients', company_clients_path(@company) %>
+    </li>
+    <li>
+        <%= link_to 'Employees', company_employees_path(@company) %>
+    </li>
+    <li>
+        <%= link_to 'Drivers', company_drivers_path(@company) %>
+    </li>
+    <li>
+        <%= link_to 'Shipments', company_shipments_path(@company) %>
+    </li>
+</ul>

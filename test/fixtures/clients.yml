@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyText
+  Address: MyText
+  Type: 
+  Billing_Address: MyText
+  NIF: MyString
+  Verified: false
+  company_id: 
+
+two:
+  Name: MyText
+  Address: MyText
+  Type: 
+  Billing_Address: MyText
+  NIF: MyString
+  Verified: false
+  company_id: 

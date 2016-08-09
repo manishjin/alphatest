@@ -1,0 +1,129 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sub shipment:</strong>
+  <%= @shipment.Sub_Shipment %>
+</p>
+
+<p>
+  <strong>Parent shipment id:</strong>
+  <%= @shipment.Parent_Shipment_ID %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @shipment.Status %>
+</p>
+
+<p>
+  <strong>Client id:</strong>
+  <%= @shipment.Client_ID %>
+</p>
+
+<p>
+  <strong>Client name:</strong>
+  <%= @shipment.Client_Name %>
+</p>
+
+<p>
+  <strong>Pickup location:</strong>
+  <%= @shipment.Pickup_Location %>
+</p>
+
+<p>
+  <strong>Pickup date:</strong>
+  <%= @shipment.Pickup_Date %>
+</p>
+
+<p>
+  <strong>Pickup start time:</strong>
+  <%= @shipment.Pickup_Start_Time %>
+</p>
+
+<p>
+  <strong>Pickup end time:</strong>
+  <%= @shipment.Pickup_End_Time %>
+</p>
+
+<p>
+  <strong>Pickup gate:</strong>
+  <%= @shipment.Pickup_Gate %>
+</p>
+
+<p>
+  <strong>Pickup contact person:</strong>
+  <%= @shipment.Pickup_Contact_Person %>
+</p>
+
+<p>
+  <strong>Pickup contact no:</strong>
+  <%= @shipment.Pickup_Contact_No %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @shipment.Weight %>
+</p>
+
+<p>
+  <strong>Palletized:</strong>
+  <%= @shipment.Palletized %>
+</p>
+
+<p>
+  <strong>No of pallets:</strong>
+  <%= @shipment.No_of_Pallets %>
+</p>
+
+<p>
+  <strong>Dropoff location:</strong>
+  <%= @shipment.Dropoff_Location %>
+</p>
+
+<p>
+  <strong>Dropoff date:</strong>
+  <%= @shipment.Dropoff_Date %>
+</p>
+
+<p>
+  <strong>Dropoff start time:</strong>
+  <%= @shipment.Dropoff_Start_Time %>
+</p>
+
+<p>
+  <strong>Dropff end time:</strong>
+  <%= @shipment.Dropff_End_Time %>
+</p>
+
+<p>
+  <strong>Dropoff gate:</strong>
+  <%= @shipment.Dropoff_Gate %>
+</p>
+
+<p>
+  <strong>Dropoff contact person:</strong>
+  <%= @shipment.Dropoff_Contact_Person %>
+</p>
+
+<p>
+  <strong>Dropff contact no:</strong>
+  <%= @shipment.Dropff_Contact_No %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @shipment.Comments %>
+</p>
+
+<p>
+  <strong>Cargo type:</strong>
+  <%= @shipment.Cargo_Type %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @shipment.company %>
+</p>
+
+<%= link_to 'Edit', edit_shipment_path(@shipment) %> |
+<%= link_to 'Back', shipments_path %>

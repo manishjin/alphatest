@@ -1,0 +1,318 @@
+<!-- EMPLOYEES INDEX.HTML.ERB -->
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Employees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Telephone</th>
+      <th>Email</th>
+      <th>Designation</th>
+      <th>Social sec</th>
+      <th>Country</th>
+      <th>Company</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee.First_Name %></td>
+        <td><%= employee.Last_Name %></td>
+        <td><%= employee.Telephone %></td>
+        <td><%= employee.Email %></td>
+        <td><%= employee.Designation %></td>
+        <td><%= employee.Social_Sec %></td>
+        <td><%= employee.Country %></td>
+        <td><%= employee.company %></td>
+        <td><%= link_to 'Show', employee %></td>
+        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Employee', new_employee_path %>
+<!-- DRIVERS INDEX.HTML.ERB -->
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Drivers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Telephone</th>
+      <th>Email</th>
+      <th>Truck no</th>
+      <th>Social sec</th>
+      <th>Verified</th>
+      <th>Company</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @drivers.each do |driver| %>
+      <tr>
+        <td><%= driver.First_Name %></td>
+        <td><%= driver.Last_Name %></td>
+        <td><%= driver.Telephone %></td>
+        <td><%= driver.Email %></td>
+        <td><%= driver.Truck_No %></td>
+        <td><%= driver.Social_Sec %></td>
+        <td><%= driver.Verified %></td>
+        <td><%= driver.company %></td>
+        <td><%= link_to 'Show', driver %></td>
+        <td><%= link_to 'Edit', edit_driver_path(driver) %></td>
+        <td><%= link_to 'Destroy', driver, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Driver', new_driver_path %>
+
+<!-- SHIPMENTS INDEX.HTML.ERB -->
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Shipments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub shipment</th>
+      <th>Parent shipment id</th>
+      <th>Status</th>
+      <th>Client id</th>
+      <th>Client name</th>
+      <th>Pickup location</th>
+      <th>Pickup date</th>
+      <th>Pickup start time</th>
+      <th>Pickup end time</th>
+      <th>Pickup gate</th>
+      <th>Pickup contact person</th>
+      <th>Pickup contact no</th>
+      <th>Weight</th>
+      <th>Palletized</th>
+      <th>No of pallets</th>
+      <th>Dropoff location</th>
+      <th>Dropoff date</th>
+      <th>Dropoff start time</th>
+      <th>Dropff end time</th>
+      <th>Dropoff gate</th>
+      <th>Dropoff contact person</th>
+      <th>Dropff contact no</th>
+      <th>Comments</th>
+      <th>Cargo type</th>
+      <th>Company</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shipments.each do |shipment| %>
+      <tr>
+        <td><%= shipment.Sub_Shipment %></td>
+        <td><%= shipment.Parent_Shipment_ID %></td>
+        <td><%= shipment.Status %></td>
+        <td><%= shipment.Client_ID %></td>
+        <td><%= shipment.Client_Name %></td>
+        <td><%= shipment.Pickup_Location %></td>
+        <td><%= shipment.Pickup_Date %></td>
+        <td><%= shipment.Pickup_Start_Time %></td>
+        <td><%= shipment.Pickup_End_Time %></td>
+        <td><%= shipment.Pickup_Gate %></td>
+        <td><%= shipment.Pickup_Contact_Person %></td>
+        <td><%= shipment.Pickup_Contact_No %></td>
+        <td><%= shipment.Weight %></td>
+        <td><%= shipment.Palletized %></td>
+        <td><%= shipment.No_of_Pallets %></td>
+        <td><%= shipment.Dropoff_Location %></td>
+        <td><%= shipment.Dropoff_Date %></td>
+        <td><%= shipment.Dropoff_Start_Time %></td>
+        <td><%= shipment.Dropff_End_Time %></td>
+        <td><%= shipment.Dropoff_Gate %></td>
+        <td><%= shipment.Dropoff_Contact_Person %></td>
+        <td><%= shipment.Dropff_Contact_No %></td>
+        <td><%= shipment.Comments %></td>
+        <td><%= shipment.Cargo_Type %></td>
+        <td><%= shipment.company %></td>
+        <td><%= link_to 'Show', shipment %></td>
+        <td><%= link_to 'Edit', edit_shipment_path(shipment) %></td>
+        <td><%= link_to 'Destroy', shipment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shipment', new_company_shipment_path %>
+
+
+<!-- CLIENTS INDEX.HTML.ERB -->
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Clients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Type</th>
+      <th>Billing address</th>
+      <th>Nif</th>
+      <th>Verified</th>
+      <th>Company</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= client.Name %></td>
+        <td><%= client.Address %></td>
+        <td><%= client.Type %></td>
+        <td><%= client.Billing_Address %></td>
+        <td><%= client.NIF %></td>
+        <td><%= client.Verified %></td>
+        <td><%= client.company %></td>
+        <td><%= link_to 'Show', client %></td>
+        <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!-- COMPANIES INDEX.HTML.ERB -->
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Companies</h1>
+
+<table class="table table-responsive">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Nif</th>
+      <th>Createdby</th>
+      <th>Updatedby</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.Name %></td>
+        <td><%= company.Address %></td>
+        <td><%= company.NIF %></td>
+        <td><%= company.CreatedBy %></td>
+        <td><%= company.UpdatedBy %></td>
+        <td><%= link_to 'Show', company %></td>
+        <td><%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company', new_company_path %>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- COMPANIES_CONTROLLER --> 
+<!-- 
+class CompaniesController < ApplicationController
+  before_action :set_company, only: [:show, :edit, :update, :destroy]
+
+  # GET /companies
+  # GET /companies.json
+  def index
+    @companies = Company.all
+  end
+
+  # GET /companies/1
+  # GET /companies/1.json
+  def show
+  end
+
+  # GET /companies/new
+  def new
+    @company = Company.new
+  end
+
+  # GET /companies/1/edit
+  def edit
+  end
+
+  # POST /companies
+  # POST /companies.json
+  def create
+    @company = Company.new(company_params)
+
+    respond_to do |format|
+      if @company.save
+        format.html { redirect_to @company, notice: 'Company was successfully created.' }
+        format.json { render :show, status: :created, location: @company }
+      else
+        format.html { render :new }
+        format.json { render json: @company.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /companies/1
+  # PATCH/PUT /companies/1.json
+  def update
+    respond_to do |format|
+      if @company.update(company_params)
+        format.html { redirect_to @company, notice: 'Company was successfully updated.' }
+        format.json { render :show, status: :ok, location: @company }
+      else
+        format.html { render :edit }
+        format.json { render json: @company.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /companies/1
+  # DELETE /companies/1.json
+  def destroy
+    @company.destroy
+    respond_to do |format|
+      format.html { redirect_to companies_url, notice: 'Company was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_company
+      @company = Company.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def company_params
+      params.require(:company).permit(:Name, :Address, :NIF, :CreatedBy, :UpdatedBy)
+    end
+end
+-->

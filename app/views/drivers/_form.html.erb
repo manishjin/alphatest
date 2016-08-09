@@ -1,0 +1,49 @@
+<%= form_for([@company,@driver]) do |f| %>
+  <% if @driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+
+      <ul>
+      <% @driver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :First_Name %><br>
+    <%= f.text_field :First_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Last_Name %><br>
+    <%= f.text_field :Last_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Telephone %><br>
+    <%= f.number_field :Telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+  </div>
+  <div class="field">
+    <%= f.label :Truck_No %><br>
+    <%= f.text_field :Truck_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Social_Sec %><br>
+    <%= f.text_field :Social_Sec %>
+  </div>
+  <div class="field">
+    <%= f.label :Verified %><br>
+    <%= f.check_box :Verified %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.text_field :company_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Sub_Shipment: false
+  Parent_Shipment_ID: 1
+  Status: MyString
+  Client_ID: 1
+  Client_Name: MyText
+  Pickup_Location: MyText
+  Pickup_Date: 2016-08-06
+  Pickup_Start_Time: 2016-08-06 13:25:57
+  Pickup_End_Time: 2016-08-06 13:25:57
+  Pickup_Gate: 1
+  Pickup_Contact_Person: MyString
+  Pickup_Contact_No: 1
+  Weight: 1
+  Palletized: false
+  No_of_Pallets: 1
+  Dropoff_Location: MyText
+  Dropoff_Date: 2016-08-06
+  Dropoff_Start_Time: 2016-08-06 13:25:57
+  Dropff_End_Time: 2016-08-06 13:25:57
+  Dropoff_Gate: 1
+  Dropoff_Contact_Person: MyString
+  Dropff_Contact_No: 1
+  Comments: MyText
+  Cargo_Type: MyText
+  company_id: 
+
+two:
+  Sub_Shipment: false
+  Parent_Shipment_ID: 1
+  Status: MyString
+  Client_ID: 1
+  Client_Name: MyText
+  Pickup_Location: MyText
+  Pickup_Date: 2016-08-06
+  Pickup_Start_Time: 2016-08-06 13:25:57
+  Pickup_End_Time: 2016-08-06 13:25:57
+  Pickup_Gate: 1
+  Pickup_Contact_Person: MyString
+  Pickup_Contact_No: 1
+  Weight: 1
+  Palletized: false
+  No_of_Pallets: 1
+  Dropoff_Location: MyText
+  Dropoff_Date: 2016-08-06
+  Dropoff_Start_Time: 2016-08-06 13:25:57
+  Dropff_End_Time: 2016-08-06 13:25:57
+  Dropoff_Gate: 1
+  Dropoff_Contact_Person: MyString
+  Dropff_Contact_No: 1
+  Comments: MyText
+  Cargo_Type: MyText
+  company_id: 

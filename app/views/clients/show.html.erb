@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client.Name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @client.Address %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @client.Type %>
+</p>
+
+<p>
+  <strong>Billing address:</strong>
+  <%= @client.Billing_Address %>
+</p>
+
+<p>
+  <strong>Nif:</strong>
+  <%= @client.NIF %>
+</p>
+
+<p>
+  <strong>Verified:</strong>
+  <%= @client.Verified %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @client.company %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
