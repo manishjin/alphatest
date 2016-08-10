@@ -1,0 +1,160 @@
+/* line 5, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#customheader {
+  background-image: url("/dev-assets/2trucks-234953580e10b2d0cf3bfc6f0889d121683b4bdb9a25ae831263fcbf88f55924.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+/* line 17, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#customheader .intro-text {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* line 21, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#customheader .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+/* line 29, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#customheader .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-weight: 300; */
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  /* line 37, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+  #customheader .intro-text {
+    padding-top: 170px;
+    padding-bottom: 140px;
+  }
+
+  /* line 41, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+  #customheader .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 45px;
+  }
+
+  /* line 47, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+  #customheader .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+/* line 57, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#landingheader {
+  background-image: url("/dev-assets/1truck-ef14e19ce1028144e3ed8a82bbcf80737df43854dd6d49073f59303683f94420.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: left;
+  color: white;
+}
+
+/* line 69, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#landingheader .intro-text {
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+
+/* line 73, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#landingheader .intro-img {
+  padding-top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 270px;
+}
+
+/* line 80, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#landingheader .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+/* line 88, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#landingheader .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-weight: 300; */
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  /* line 97, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+  #customheader .intro-text .intro-img {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  /* line 101, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+  #landingheader .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  /* line 109, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+  #landingheader .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+}
+/* line 120, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#portfoliosection {
+  background-image: url("/dev-assets/warehouse-992f653c3518d406d268aa76a762a3f37768f58da6a7bad04304377b9712178a.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+/* line 132, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/custom.scss.erb */
+#portfoliosection .row {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
