@@ -29,10 +29,9 @@ class CompaniesController < ApplicationController
 
     
     if @company.save
-      redirect companies_path, notice: 'Company was successfully created.' 
+      redirect_to companies_path, notice: 'Company was successfully created.' 
     else
-      set_company
-      render :action => :index
+      format.html { render :new }
     end
   end
 

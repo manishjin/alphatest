@@ -20,9 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-
-    <link href="<%= asset_path "themecustom.scss" %>" rel="stylesheet">
-    <link href="<%= asset_path "custom.scss" %>" rel="stylesheet">
+    <%= stylesheet_link_tag 'themecustom', media: 'all' %>
+    <%= stylesheet_link_tag 'custom', media: 'all' %>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -142,7 +141,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <!-- <img src="../assets/msg.png" class="img-responsive" > -->
-                    <%= image_tag("msg.PNG", class: "img-responsive center-block", size:"141x291") %>
+                    <%= image_tag("msg.PNG", class: "img-responsive center-block", size:"141x255") %>
                 </div>
                 <div class="col-lg-2"></div>
                 <!-- 
