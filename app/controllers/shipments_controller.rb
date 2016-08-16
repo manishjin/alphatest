@@ -17,6 +17,7 @@ class ShipmentsController < ApplicationController
   def new
     @company = Company.find(params[:company_id])
     @shipment = Shipment.new
+    @shipment.company_id = @company.id
   end
 
   # GET /shipments/1/edit

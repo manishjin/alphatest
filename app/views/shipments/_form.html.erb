@@ -11,107 +11,128 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Sub_Shipment %><br>
-    <%= f.check_box :Sub_Shipment %>
+    <!-- /.row -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Provide Shipment details
+      </div>
+      <div class="panel-body">
+        <form role="form">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6">
+              <div class="form-group">
+                <label>Sub Shipment: Is it associated with other shipment</label>
+                <%= f.check_box :Sub_Shipment, class: "checkbox" %>
+              </div>
+              <div class="form-group">
+                <label>If Yes, please provide the associated shipment ID</label>
+                <%= f.number_field :Parent_Shipment_ID, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Status</label>
+                <%= f.text_field :Status, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Client ID (if available)</label>
+                <%= f.text_field :Client_ID, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Client Name</label>
+                <%= f.text_area :Client_Name, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Pick-up Location</label>
+                <%= f.text_area :Pickup_Location, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Pick-up Date</label>
+                <%= f.date_select :Pickup_Date, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Pick-up Start Time</label>
+                <%= f.time_select :Pickup_Start_Time, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Pick-up End Time</label>
+                <%= f.time_select :Pickup_End_Time, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Pick-up Gate</label>
+                <%= f.number_field :Pickup_Gate, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Pick-up contact person</label>
+                <%= f.text_field :Pickup_Contact_Person, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Contact number of pick-up contact person</label>
+                <%= f.number_field :Pickup_Contact_No, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Company ID</label>
+                <%= f.text_field :company_id, class: "form-control" %>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="form-group">
+                <label>Weight of the shipment</label>
+                <%= f.number_field :Weight, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Is shipment Palletized?</label>
+                <%= f.check_box :Palletized, class: "checkbox" %>
+              </div>
+              <div class="form-group">
+                <label>If Yes, number of pallets?</label>
+                <%= f.number_field :No_of_Pallets, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Drop-off Location</label>
+                <%= f.text_area :Dropoff_Location, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Drop-off Date</label>
+                <%= f.date_select :Dropoff_Date, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Drop-off Start Time</label>
+                <%= f.time_select :Dropoff_Start_Time, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Drop-off End Time</label>
+                <%= f.time_select :Dropff_End_Time, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Drop-off Gate</label>
+                <%= f.number_field :Dropoff_Gate, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Drop-off contact person</label>
+                <%= f.text_field :Dropoff_Contact_Person, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Contact number of drop-off contact person</label>
+                <%= f.number_field :Dropff_Contact_No, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Additional comments</label>
+                <%= f.text_area :Comments, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Type of Cargo</label>
+                <%= f.text_area :Cargo_Type, class: "form-control" %>
+              </div>
+              <div class="actions">
+                <%= f.submit "Create Shipment", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :Parent_Shipment_ID %><br>
-    <%= f.number_field :Parent_Shipment_ID %>
-  </div>
-  <div class="field">
-    <%= f.label :Status %><br>
-    <%= f.text_field :Status %>
-  </div>
-  <div class="field">
-    <%= f.label :Client_ID %><br>
-    <%= f.number_field :Client_ID %>
-  </div>
-  <div class="field">
-    <%= f.label :Client_Name %><br>
-    <%= f.text_area :Client_Name %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_Location %><br>
-    <%= f.text_area :Pickup_Location %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_Date %><br>
-    <%= f.date_select :Pickup_Date %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_Start_Time %><br>
-    <%= f.time_select :Pickup_Start_Time %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_End_Time %><br>
-    <%= f.time_select :Pickup_End_Time %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_Gate %><br>
-    <%= f.number_field :Pickup_Gate %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_Contact_Person %><br>
-    <%= f.text_field :Pickup_Contact_Person %>
-  </div>
-  <div class="field">
-    <%= f.label :Pickup_Contact_No %><br>
-    <%= f.number_field :Pickup_Contact_No %>
-  </div>
-  <div class="field">
-    <%= f.label :Weight %><br>
-    <%= f.number_field :Weight %>
-  </div>
-  <div class="field">
-    <%= f.label :Palletized %><br>
-    <%= f.check_box :Palletized %>
-  </div>
-  <div class="field">
-    <%= f.label :No_of_Pallets %><br>
-    <%= f.number_field :No_of_Pallets %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropoff_Location %><br>
-    <%= f.text_area :Dropoff_Location %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropoff_Date %><br>
-    <%= f.date_select :Dropoff_Date %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropoff_Start_Time %><br>
-    <%= f.time_select :Dropoff_Start_Time %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropff_End_Time %><br>
-    <%= f.time_select :Dropff_End_Time %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropoff_Gate %><br>
-    <%= f.number_field :Dropoff_Gate %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropoff_Contact_Person %><br>
-    <%= f.text_field :Dropoff_Contact_Person %>
-  </div>
-  <div class="field">
-    <%= f.label :Dropff_Contact_No %><br>
-    <%= f.number_field :Dropff_Contact_No %>
-  </div>
-  <div class="field">
-    <%= f.label :Comments %><br>
-    <%= f.text_area :Comments %>
-  </div>
-  <div class="field">
-    <%= f.label :Cargo_Type %><br>
-    <%= f.text_area :Cargo_Type %>
-  </div>
-  <div class="field">
-    <%= f.label :company_id %><br>
-    <%= f.text_field :company_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+
 <% end %>

@@ -44,7 +44,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -59,19 +59,18 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
     <!-- Header -->
-    <header>
+    <header id="customheader">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To TRANSWIZ</div>
-                <div class="intro-heading">Manage, track, and communicate with your shipments</div>
-                <a href="#manage" class="page-scroll btn btn-xl">Manage Shipments</a>
-                <a href="#create" class="page-scroll btn btn-xl">Create Shipments</a>
+                <!-- <div class="intro-lead-in">Welcome To TRANSWIZ</div>
+                <div class="intro-heading">Manage, track, and communicate with your shipments</div> -->
+                <a href="#create" class="page-scroll btn btn-med">Add New Company</a>
             </div>
         </div>
     </header>
@@ -85,10 +84,10 @@
                 <th>Name</th>
                 <th data-breakpoints="xs sm md">Address</th>
                 <th data-breakpoints="xs sm md">Nif</th>
+                <th data-type="html"></th>
                 <th data-breakpoints="xs sm md lg">Createdby</th>
                 <th data-breakpoints="xs sm md lg">Updatedby</th>
-                <th data-type="html" data-breakpoints="xs sm md lg">Show</th>
-                <th data-type="html" data-breakpoints="xs sm md lg">Edit</th>
+                <!-- <th data-type="html" data-breakpoints="xs sm md lg">Edit</th> -->
               </tr>
             </thead>
             
@@ -98,25 +97,49 @@
                 <td><%= comp.Name %></td>
                 <td><%= comp.Address %></td>
                 <td><%= comp.NIF %></td>
+                <td><%= link_to 'Show Details', company_shipments_path(comp) %></td>                
                 <td><%= comp.CreatedBy %></td>
                 <td><%= comp.UpdatedBy %></td>
-                <td><%= link_to 'Shipments', company_shipments_path(comp) %></td>
-                <td><%= link_to 'Details', company_path(comp) %></td>
+                <!-- <td><%= link_to 'Details', company_path(comp) %></td> -->
               </tr>
             <% end %>
             </tbody>
           </table>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="create">
+        <!-- Clients Aside -->
+    <aside class="clients" style="background-color: #f2f4f1">
         <div class="container">
-<!--           <%= render 'blankform', :locals => {:company => @company} %> -->
-        <%= link_to 'New Company', new_company_path %>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("aragones.jpg", class: "img-responsive center-block", size:"150x100") %>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("andotrans.png", class: "img-responsive center-block", size:"150x100", :style => 'padding-bottom: 35px; padding-top: 35px;') %>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("GEFEST.png", class: "img-responsive center-block", size:"150x100", :style => 'padding-bottom: 33px; padding-top: 33px;') %>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("naeko.png", class: "img-responsive center-block", size:"150x100") %>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- CREATE COMPANY FORM -->
+    <section id="create">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-md-1 col-sm-2"></div>
+                <div class="col-md-10 col-sm-8">
+                    <%= render 'form' %>
+                </div>
+                <div class="col-md-1 col-sm-2"></div>
+            </div>
         </div>
     </section>
-    
+
 
     <footer>
         <div class="container">

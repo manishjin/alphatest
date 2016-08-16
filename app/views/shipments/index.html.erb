@@ -35,77 +35,69 @@
         <div id="page-content-wrapper ">
     <!-- Navigation -->
     <!-- Header -->
-    <header id="customheader">
-        <div class="container-fluid">
-        <h5 style="text-align:left"><a href="#menu-toggle" id="menu-toggle">Show/Hide Menu</a></h5>
-            <div class="intro-text">
-                <div class="intro-heading">ARAGONÉS TRANSPORTS</div>
-                <a href="<%= new_company_shipment_path %>" class="page-scroll btn btn-med">Create Shipment</a>
-            </div>
-        </div>
-    </header>
+            <header id="customheader">
+                <div class="container-fluid">
+                <h5 style="text-align:left"><a href="#menu-toggle" id="menu-toggle">Show/Hide Menu</a></h5>
+                    <div class="intro-text">
+                        <div class="intro-heading">ARAGONÉS TRANSPORTS</div>
+                        <a href="<%= new_company_shipment_path %>" class="page-scroll btn btn-med">Create Shipment</a>
+                    </div>
+                </div>
+            </header>
 
-    <!-- Services Section -->
-    <section id="manage">
-        <div class="container table-responsive">
-          <table class="table table-striped table-bordered" data-paging="true" data-filtering="true" data-sorting="true">
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Client Name</th>
-                <th>Pickup date</th>
-                <th>Dropoff date</th>
-                <th data-breakpoints="xs sm md lg">Weight</th>
-                <th data-breakpoints="xs sm md lg">Pickup location</th>
-                <th data-breakpoints="xs sm md lg">Pickup Time</th>
-                <th data-breakpoints="xs sm md lg">Pickup Contact Person</th>
-                <th data-breakpoints="xs sm md lg">Pickup Contact Number</th>
-                <th data-breakpoints="xs sm md lg">Dropoff location</th>
-                <th data-breakpoints="xs sm md lg">Dropoff Time</th>
-                <th data-breakpoints="xs sm md lg">Dropoff Contact Person</th>
-                <th data-breakpoints="xs sm md lg">Dropoff Contact Number</th>
-                <th data-breakpoints="xs sm md lg">Palletized</th>
-                <th data-breakpoints="xs sm md lg">No of Pallets</th>
-                <th data-breakpoints="xs sm md lg">Cargo Type</th>
-                <th data-breakpoints="xs sm md lg">Company</th>
-              </tr>
-            </thead>
-            
-            <tbody>
-            <% @shipments.each do |shipment| %>
-              <tr>
-                <td><%= shipment.Status %></td>
-                <td><%= shipment.Client_Name %></td>
-                <td><%= shipment.Pickup_Date %></td>
-                <td><%= shipment.Dropoff_Date %></td>
-                <td><%= shipment.Weight %></td>
-                <td><%= shipment.Pickup_Location %></td>
-                <td><%= shipment.Pickup_Start_Time %></td>
-                <td><%= shipment.Pickup_Contact_Person %></td>
-                <td><%= shipment.Pickup_Contact_No %></td>
-                <td><%= shipment.Dropoff_Location %></td>
-                <td><%= shipment.Dropoff_Start_Time %></td>
-                <td><%= shipment.Dropoff_Contact_Person %></td>
-                <td><%= shipment.Dropff_Contact_No %></td>
-                <td><%= shipment.Palletized %></td>
-                <td><%= shipment.No_of_Pallets %></td>
-                <td><%= shipment.Cargo_Type %></td>
-                <td><%= shipment.company_id %></td>
-              </tr>
-            <% end %>
-            </tbody>
-          </table>
+            <!-- Services Section -->
+            <section id="manage">
+                <div class="container table-responsive">
+                  <table class="table table-striped table-bordered" data-paging="true" data-filtering="true" data-sorting="true">
+                    <thead>
+                      <tr>
+                        <th>Status</th>
+                        <th>Client Name</th>
+                        <th>Pickup date</th>
+                        <th>Dropoff date</th>
+                        <th data-breakpoints="xs sm md lg">Weight</th>
+                        <th data-breakpoints="xs sm md lg">Pickup location</th>
+                        <th data-breakpoints="xs sm md lg">Pickup Time</th>
+                        <th data-breakpoints="xs sm md lg">Pickup Contact Person</th>
+                        <th data-breakpoints="xs sm md lg">Pickup Contact Number</th>
+                        <th data-breakpoints="xs sm md lg">Dropoff location</th>
+                        <th data-breakpoints="xs sm md lg">Dropoff Time</th>
+                        <th data-breakpoints="xs sm md lg">Dropoff Contact Person</th>
+                        <th data-breakpoints="xs sm md lg">Dropoff Contact Number</th>
+                        <th data-breakpoints="xs sm md lg">Palletized</th>
+                        <th data-breakpoints="xs sm md lg">No of Pallets</th>
+                        <th data-breakpoints="xs sm md lg">Cargo Type</th>
+                        <th data-breakpoints="xs sm md lg">Company</th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                    <% @shipments.each do |shipment| %>
+                      <tr>
+                        <td><%= shipment.Status %></td>
+                        <td><%= shipment.Client_Name %></td>
+                        <td><%= shipment.Pickup_Date %></td>
+                        <td><%= shipment.Dropoff_Date %></td>
+                        <td><%= shipment.Weight %></td>
+                        <td><%= shipment.Pickup_Location %></td>
+                        <td><%= shipment.Pickup_Start_Time %></td>
+                        <td><%= shipment.Pickup_Contact_Person %></td>
+                        <td><%= shipment.Pickup_Contact_No %></td>
+                        <td><%= shipment.Dropoff_Location %></td>
+                        <td><%= shipment.Dropoff_Start_Time %></td>
+                        <td><%= shipment.Dropoff_Contact_Person %></td>
+                        <td><%= shipment.Dropff_Contact_No %></td>
+                        <td><%= shipment.Palletized %></td>
+                        <td><%= shipment.No_of_Pallets %></td>
+                        <td><%= shipment.Cargo_Type %></td>
+                        <td><%= shipment.company_id %></td>
+                      </tr>
+                    <% end %>
+                    </tbody>
+                  </table>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="create">
-        <div class="container">
-          <h3> THis is about section. We will show create form here</h3>
-          <%= link_to 'New Shipment', new_company_shipment_path %>
-        </div>
-    </section>
-    </div>
  </div>   
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
