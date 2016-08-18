@@ -3,7 +3,9 @@ Rails.application.routes.draw do
     resources :clients
     resources :employees
     resources :drivers
-    resources :shipments
+    resources :shipments do
+      post 'message', on: :member
+    end
   end
   
   root 'pages#home'
@@ -14,7 +16,6 @@ Rails.application.routes.draw do
 
   get 'pages/contact'
 
-  get 'pages/shipments'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

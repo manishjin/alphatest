@@ -130,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">¿Cómo funciona?</h2>
-                    <h3 class="section-subheading text-muted">Transwiz es accesible y fácil de usar, tanto desde tu navegador como desde tu móvil</h3>
+                    <h3 class="section-subheading text-muted" style="color:#000">Transwiz es accesible y fácil de usar, tanto desde tu navegador como desde tu móvil</h3>
                 </div>
             </div>
             <div class="row">
@@ -144,15 +144,15 @@
                     <%= image_tag("msg.PNG", class: "img-responsive center-block", size:"141x255") %>
                 </div>
                 <div class="col-lg-2"></div>
-                <!-- 
+                
                 <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Utilizando nuestra app móvil, el transportista recibe directamente los detalles de los envíos y envía actualizaciones en tiempo real del estado de los envíos y su localización</h3>
-                    <a href="#startModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">
-                    PRUÉBALO GRATUITAMENTE</a>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h3 class="section-subheading text-muted" style="color:#000">Utilizando nuestra app móvil, el transportista recibe directamente los detalles de los envíos y envía actualizaciones en tiempo real del estado de los envíos y su localización</h3>
+<!--                         <a href="#startModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">
+                    PRUÉBALO GRATUITAMENTE</a> -->
+                    </div>
                 </div>
-                </div>
-                 -->
+                
             </div>
         </div>
     </section>
@@ -193,43 +193,63 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
+<!-- Clients Aside -->
+    <aside class="clients" style="background-color: #f2f4f1">
         <div class="container">
             <div class="row">
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("aragones.jpg", class: "img-responsive center-block", size:"150x100") %>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("andotrans.png", class: "img-responsive center-block", size:"150x100", :style => 'padding-bottom: 35px; padding-top: 35px;') %>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("GEFEST.png", class: "img-responsive center-block", size:"150x100", :style => 'padding-bottom: 33px; padding-top: 33px;') %>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                        <%= image_tag("naeko.png", class: "img-responsive center-block", size:"150x100") %>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">¿Quieres saber más?</h2>
+                    <h5 class="section-subheading" style="color:#fff">Deja tus datos y nos pondremos en contacto contigo</h5>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4 col-md-offset-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Nombre de la empresa *" id="name" required data-validation-required-message="Por favor, escriba su nombre.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Correo electrónico *" id="email" required data-validation-required-message="Por favor, introduzca su dirección de correo electrónico.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Número de teléfono *" id="phone" required data-validation-required-message="Por favor, introduzca su número de teléfono.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
+<!--                             </div>
+                            <div class="col-md-6"> -->
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <input type="text" class="form-control" placeholder="Mensaje *" id="message" required data-validation-required-message="Por favor, introduzca un mensaje.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
+                            <div class="col-md-4 col-md-offset-4 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-med">ENVIAR</button>
                             </div>
                         </div>
                     </form>
@@ -241,16 +261,17 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                <div class="col-md-5 text-center">
+                    <span class="copyright">© 2016 Transwiz S.L - Todos los derechos reservados</span>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
+                <div class="col-md-4 col-md-offset-3">
+                    <span class="copyright">info@trans-wiz.com</span>
+<!--                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>

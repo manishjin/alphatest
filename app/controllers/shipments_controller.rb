@@ -1,6 +1,6 @@
 class ShipmentsController < ApplicationController
-  before_action :set_shipment, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_shipment, only: [:show, :edit, :update, :destroy, :message]
+  require 'telegram/bot'
   # GET /shipments
   # GET /shipments.json
   def index
@@ -65,9 +65,22 @@ class ShipmentsController < ApplicationController
     end
   end
 
+  def message
+    token = '170792074:AAEI62XZtwwo9pHjzWav--fcye6y6YAtNJA'
+    messagechatid = '244762094'
+    messagetext = params[:mesg]
+
+    Telegram::Bot::Client.run(token) do |bot|
+    # bot.api.send_photo(chat_id: messagechatid, photo: Faraday::UploadIO.new('C:\Users\Manish\Desktop\AT.jpg', 'image/jpeg'))
+    bot.api.send_message(chat_id: messagechatid, text: messagetext, parse_mode: 'HTML')
+    redirect_to company_shipments_path(@company)
+    end 
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_shipment
+      @company = Company.find(params[:company_id])
       @shipment = Shipment.find(params[:id])
     end
 

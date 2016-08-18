@@ -16,116 +16,116 @@
   <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
-        Provide Shipment details
+        Proporciona los detalles del envío
       </div>
       <div class="panel-body">
         <form role="form">
           <div class="row">
             <div class="col-lg-6 col-sm-6">
               <div class="form-group">
-                <label>Sub Shipment: Is it associated with other shipment</label>
+                <label>Sub-envío: está asociado con otro envío ya creado</label>
                 <%= f.check_box :Sub_Shipment, class: "checkbox" %>
               </div>
               <div class="form-group">
-                <label>If Yes, please provide the associated shipment ID</label>
+                <label>En caso afirmativo, proporciona el ID del envío asociado</label>
                 <%= f.number_field :Parent_Shipment_ID, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Status</label>
+                <label>Estado</label>
                 <%= f.text_field :Status, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Client ID (if available)</label>
+                <label>ID del Cliente (si está disponible)</label>
                 <%= f.text_field :Client_ID, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Client Name</label>
+                <label>Nombre del Cliente</label>
                 <%= f.text_area :Client_Name, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Pick-up Location</label>
+                <label>Dirección de Recogida</label>
                 <%= f.text_area :Pickup_Location, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Pick-up Date</label>
+                <label>Fecha de Recogida</label>
                 <%= f.date_select :Pickup_Date, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Pick-up Start Time</label>
+                <label>Hora inicio de Recogida</label>
                 <%= f.time_select :Pickup_Start_Time, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Pick-up End Time</label>
+                <label>Hora límite de Recogida</label>
                 <%= f.time_select :Pickup_End_Time, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Pick-up Gate</label>
+                <label>Puerta de recogida</label>
                 <%= f.number_field :Pickup_Gate, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Pick-up contact person</label>
+                <label>Nombre de Contacto en Recogida</label>
                 <%= f.text_field :Pickup_Contact_Person, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Contact number of pick-up contact person</label>
+                <label>Número de Contacto en Recogida</label>
                 <%= f.number_field :Pickup_Contact_No, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Company ID</label>
+                <label>ID del Empresa</label>
                 <%= f.text_field :company_id, class: "form-control" %>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
               <div class="form-group">
-                <label>Weight of the shipment</label>
+                <label>Peso del Envío</label>
                 <%= f.number_field :Weight, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Is shipment Palletized?</label>
+                <label>Paletizado?</label>
                 <%= f.check_box :Palletized, class: "checkbox" %>
               </div>
               <div class="form-group">
-                <label>If Yes, number of pallets?</label>
+                <label>En caso afirmativo, Número de palets?</label>
                 <%= f.number_field :No_of_Pallets, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Drop-off Location</label>
+                <label>Dirección de Entrega</label>
                 <%= f.text_area :Dropoff_Location, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Drop-off Date</label>
+                <label>Fecha de Entrega</label>
                 <%= f.date_select :Dropoff_Date, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Drop-off Start Time</label>
+                <label>Hora inicio de Entrega</label>
                 <%= f.time_select :Dropoff_Start_Time, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Drop-off End Time</label>
+                <label>Hora límite de Entrega</label>
                 <%= f.time_select :Dropff_End_Time, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Drop-off Gate</label>
+                <label>Puerta de Entrega</label>
                 <%= f.number_field :Dropoff_Gate, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Drop-off contact person</label>
+                <label>Nombre de Contacto en Entrega</label>
                 <%= f.text_field :Dropoff_Contact_Person, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Contact number of drop-off contact person</label>
+                <label>Número de Contacto en Entrega</label>
                 <%= f.number_field :Dropff_Contact_No, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Additional comments</label>
+                <label>Comentarios adicionales</label>
                 <%= f.text_area :Comments, class: "form-control" %>
               </div>
               <div class="form-group">
-                <label>Type of Cargo</label>
+                <label>Tipo de carga</label>
                 <%= f.text_area :Cargo_Type, class: "form-control" %>
               </div>
               <div class="actions">
-                <%= f.submit "Create Shipment", class: "btn btn-primary" %>
+                <%= f.submit "Crear Envío", class: "btn btn-primary" %>
               </div>
             </div>
           </div>

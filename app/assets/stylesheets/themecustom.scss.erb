@@ -1,4 +1,6 @@
 //= depend_on_asset "maintruck.jpg"
+//= depend_on_asset "road.jpg"
+//= depend_on_asset "2trucks.jpg"
 
 body {
   overflow-x: hidden;
@@ -601,25 +603,29 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
-  background-position: center;
+  background-image: url('<%= image_path('2trucks.jpg') %>');
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
-section#contact .section-heading {
-  color: white;
-}
-section#contact .form-group {
-  margin-bottom: 25px;
-}
+
 section#contact .form-group input,
 section#contact .form-group textarea {
-  padding: 20px;
+  padding: 10px;
 }
 section#contact .form-group input.form-control {
   height: auto;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
 }
+
 section#contact .form-group textarea.form-control {
   height: 236px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 section#contact .form-control:focus {
   border-color: #00c4db;
@@ -628,41 +634,44 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 section#contact .text-danger {
+  background-color: #000;
   color: #e74c3c;
 }
 footer {
-  padding: 25px 0;
+  padding: 5px 0;
   text-align: center;
+  background-color: #000;
 }
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+  color: #00c4db;
 }
 footer ul.quicklinks {
   margin-bottom: 0;

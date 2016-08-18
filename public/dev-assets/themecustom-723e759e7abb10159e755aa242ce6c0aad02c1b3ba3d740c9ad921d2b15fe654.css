@@ -1,31 +1,31 @@
-/* line 2, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 5, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 6, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 9, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .text-muted {
   color: #777777;
 }
 
-/* line 9, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 12, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .text-primary {
   color: #000000;
 }
 
-/* line 12, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 15, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 p {
   font-size: 14px;
   line-height: 1.75;
 }
 
-/* line 16, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 19, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 p.large {
   font-size: 16px;
 }
 
-/* line 19, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 22, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 a,
 a:hover,
 a:focus,
@@ -34,12 +34,12 @@ a.active {
   outline: none;
 }
 
-/* line 26, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 29, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 a {
   color: #00c4db;
 }
 
-/* line 29, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 32, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 a:hover,
 a:focus,
 a:active,
@@ -47,7 +47,7 @@ a.active {
   color: #fec503;
 }
 
-/* line 35, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 38, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 h1,
 h2,
 h3,
@@ -59,22 +59,22 @@ h6 {
   font-weight: 700;
 }
 
-/* line 45, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 48, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .img-centered {
   margin: 0 auto;
 }
 
-/* line 48, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 51, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .bg-light-gray {
   background-color: #eeeeee;
 }
 
-/* line 51, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 54, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .bg-darkest-gray {
   background-color: #222222;
 }
 
-/* line 54, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 57, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-primary {
   color: white;
   background-color: #00c4db;
@@ -84,7 +84,7 @@ h6 {
   font-weight: 700;
 }
 
-/* line 62, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 65, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -95,14 +95,14 @@ h6 {
   border-color: #f6bf01;
 }
 
-/* line 71, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 74, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   background-image: none;
 }
 
-/* line 76, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 79, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,
@@ -122,13 +122,13 @@ fieldset[disabled] .btn-primary.active {
   border-color: #00c4db;
 }
 
-/* line 94, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 97, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-primary .badge {
   color: #00c4db;
   background-color: white;
 }
 
-/* line 99, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 102, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-xl {
   color: white;
   background-color: #00c4db;
@@ -141,7 +141,7 @@ fieldset[disabled] .btn-primary.active {
   padding: 20px 40px;
 }
 
-/* line 110, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 113, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -152,14 +152,14 @@ fieldset[disabled] .btn-primary.active {
   border-color: #f6bf01;
 }
 
-/* line 119, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 122, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   background-image: none;
 }
 
-/* line 124, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 127, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-xl.disabled,
 .btn-xl[disabled],
 fieldset[disabled] .btn-xl,
@@ -179,13 +179,13 @@ fieldset[disabled] .btn-xl.active {
   border-color: #00c4db;
 }
 
-/* line 142, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 145, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-xl .badge {
   color: #00c4db;
   background-color: white;
 }
 
-/* line 147, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 150, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-med {
   color: white;
   background-color: #00c4db;
@@ -198,7 +198,7 @@ fieldset[disabled] .btn-xl.active {
   padding: 5px 10px;
 }
 
-/* line 158, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 161, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-med:hover,
 .btn-med:focus,
 .btn-med:active,
@@ -209,14 +209,14 @@ fieldset[disabled] .btn-xl.active {
   border-color: #f6bf01;
 }
 
-/* line 167, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 170, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-med:active,
 .btn-med.active,
 .open .dropdown-toggle.btn-med {
   background-image: none;
 }
 
-/* line 172, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 175, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-med.disabled,
 .btn-med[disabled],
 fieldset[disabled] .btn-med,
@@ -236,25 +236,25 @@ fieldset[disabled] .btn-med.active {
   border-color: #00c4db;
 }
 
-/* line 190, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 193, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn-med .badge {
   color: #00c4db;
   background-color: white;
 }
 
-/* line 195, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 198, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
 }
 
-/* line 199, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 202, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-brand {
   color: #00c4db;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
-/* line 203, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 206, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -262,12 +262,12 @@ fieldset[disabled] .btn-med.active {
   color: #fec503;
 }
 
-/* line 209, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 212, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 
-/* line 212, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 215, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-toggle {
   background-color: #00c4db;
   border-color: #00c4db;
@@ -277,13 +277,13 @@ fieldset[disabled] .btn-med.active {
   font-size: 12px;
 }
 
-/* line 220, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 223, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #00c4db;
 }
 
-/* line 224, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 227, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -292,21 +292,21 @@ fieldset[disabled] .btn-med.active {
   color: white;
 }
 
-/* line 231, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 234, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #00c4db;
   outline: none;
 }
 
-/* line 236, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 239, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
   background-color: #00c4db;
 }
 
-/* line 241, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 244, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
@@ -314,7 +314,7 @@ fieldset[disabled] .btn-med.active {
 }
 
 @media (min-width: 768px) {
-  /* line 247, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 250, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -324,7 +324,7 @@ fieldset[disabled] .btn-med.active {
     border: none;
   }
 
-  /* line 255, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 258, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
@@ -332,24 +332,24 @@ fieldset[disabled] .btn-med.active {
     transition: all 0.3s;
   }
 
-  /* line 261, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 264, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
 }
 @media (min-width: 768px) {
-  /* line 266, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 269, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .navbar-custom.affix {
     background-color: #222222;
     padding: 10px 0;
   }
 
-  /* line 270, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 273, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
-/* line 274, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 277, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 header {
   background-image: url("/dev-assets/maintruck-c36a1313239af2ce8c2444c509dbb4d0ad61be9cc7ef01ce7dabec39e2b2a428.jpg");
   background-repeat: no-repeat;
@@ -363,13 +363,13 @@ header {
   color: white;
 }
 
-/* line 286, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 289, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 header .intro-text {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 290, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 293, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -379,7 +379,7 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 
-/* line 298, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 301, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* font-weight: 300; */
@@ -389,13 +389,13 @@ header .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
-  /* line 306, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 309, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
   }
 
-  /* line 310, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 313, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -404,7 +404,7 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
   }
 
-  /* line 317, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 320, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -414,12 +414,12 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
   }
 }
-/* line 326, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 329, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section {
   padding: 40px 0;
 }
 
-/* line 329, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 332, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section h2.section-heading {
   font-size: 30px;
   color: #00c4db;
@@ -427,7 +427,7 @@ section h2.section-heading {
   margin-bottom: 20px;
 }
 
-/* line 335, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 338, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section h3.section-subheading {
   font-size: 16px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -437,24 +437,24 @@ section h3.section-subheading {
 }
 
 @media (min-width: 768px) {
-  /* line 343, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 346, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   section {
     padding: 30px 0;
   }
 }
-/* line 347, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 350, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .service-heading {
   margin: 15px 0;
   text-transform: none;
 }
 
-/* line 351, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 354, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
 
-/* line 355, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 358, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
@@ -462,7 +462,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 
-/* line 361, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 364, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
   position: absolute;
@@ -474,12 +474,12 @@ section h3.section-subheading {
   -moz-transition: all ease 0.5s;
 }
 
-/* line 371, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 374, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
 
-/* line 374, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 377, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   position: absolute;
   width: 100%;
@@ -491,18 +491,18 @@ section h3.section-subheading {
   color: white;
 }
 
-/* line 384, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 387, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
 
-/* line 387, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 390, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
 
-/* line 391, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 394, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
@@ -511,13 +511,13 @@ section h3.section-subheading {
   padding: 25px;
 }
 
-/* line 398, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 401, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
 }
 
-/* line 402, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 405, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -525,25 +525,25 @@ section h3.section-subheading {
   margin: 0;
 }
 
-/* line 408, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 411, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 #portfolio * {
   z-index: 2;
 }
 
 @media (min-width: 767px) {
-  /* line 412, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 415, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
 }
-/* line 416, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 419, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline {
   list-style: none;
   padding: 0;
   position: relative;
 }
 
-/* line 421, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 424, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -555,26 +555,26 @@ section h3.section-subheading {
   margin-left: -1.5px;
 }
 
-/* line 431, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 434, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li {
   margin-bottom: 50px;
   position: relative;
   min-height: 50px;
 }
 
-/* line 436, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 439, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li:before,
 .timeline > li:after {
   content: " ";
   display: table;
 }
 
-/* line 441, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 444, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li:after {
   clear: both;
 }
 
-/* line 444, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 447, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li .timeline-panel {
   width: 100%;
   float: right;
@@ -583,7 +583,7 @@ section h3.section-subheading {
   text-align: left;
 }
 
-/* line 451, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 454, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
@@ -591,7 +591,7 @@ section h3.section-subheading {
   right: auto;
 }
 
-/* line 457, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 460, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
@@ -599,7 +599,7 @@ section h3.section-subheading {
   right: auto;
 }
 
-/* line 463, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 466, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li .timeline-image {
   left: 0;
   margin-left: 0;
@@ -614,21 +614,21 @@ section h3.section-subheading {
   text-align: center;
 }
 
-/* line 476, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 479, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li .timeline-image h4 {
   font-size: 10px;
   margin-top: 12px;
   line-height: 14px;
 }
 
-/* line 481, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 484, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   text-align: left;
   padding: 0 20px 0 100px;
 }
 
-/* line 486, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 489, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
@@ -636,7 +636,7 @@ section h3.section-subheading {
   right: auto;
 }
 
-/* line 492, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 495, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
@@ -644,41 +644,41 @@ section h3.section-subheading {
   right: auto;
 }
 
-/* line 498, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 501, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline > li:last-child {
   margin-bottom: 0;
 }
 
-/* line 501, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 504, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
 }
 
-/* line 505, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 508, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
 }
 
-/* line 508, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 511, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 513, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 516, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline:before {
     left: 50%;
   }
 
-  /* line 516, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 519, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li {
     margin-bottom: 100px;
     min-height: 100px;
   }
 
-  /* line 520, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 523, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-panel {
     width: 41%;
     float: left;
@@ -686,7 +686,7 @@ section h3.section-subheading {
     text-align: right;
   }
 
-  /* line 526, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 529, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-image {
     width: 100px;
     height: 100px;
@@ -694,14 +694,14 @@ section h3.section-subheading {
     margin-left: -50px;
   }
 
-  /* line 532, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 535, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-image h4 {
     font-size: 13px;
     margin-top: 16px;
     line-height: 18px;
   }
 
-  /* line 537, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 540, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     text-align: left;
@@ -709,185 +709,186 @@ section h3.section-subheading {
   }
 }
 @media (min-width: 992px) {
-  /* line 544, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 547, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li {
     min-height: 150px;
   }
 
-  /* line 547, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 550, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
 
-  /* line 550, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 553, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
   }
 
-  /* line 555, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 558, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-image h4 {
     font-size: 18px;
     margin-top: 30px;
     line-height: 26px;
   }
 
-  /* line 560, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 563, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 565, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 568, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li {
     min-height: 170px;
   }
 
-  /* line 568, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 571, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
 
-  /* line 571, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 574, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
     margin-left: -85px;
   }
 
-  /* line 576, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 579, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
   }
 
-  /* line 579, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+  /* line 582, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
 }
-/* line 583, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 586, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .team-member {
   text-align: center;
   margin-bottom: 50px;
 }
 
-/* line 587, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 590, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .team-member img {
   margin: 0 auto;
   border: 7px solid white;
 }
 
-/* line 591, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 594, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .team-member h4 {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
 
-/* line 596, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 599, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .team-member p {
   margin-top: 0;
 }
 
-/* line 599, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 602, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 aside.clients img {
   margin: 50px auto;
 }
 
-/* line 602, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 605, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact {
-  background-color: #222222;
-  background-position: center;
+  background-image: url("/dev-assets/2trucks-234953580e10b2d0cf3bfc6f0889d121683b4bdb9a25ae831263fcbf88f55924.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-/* line 607, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
-section#contact .section-heading {
-  color: white;
-}
-
-/* line 610, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-/* line 613, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 616, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact .form-group input,
 section#contact .form-group textarea {
-  padding: 20px;
-}
-
-/* line 617, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
-section#contact .form-group input.form-control {
-  height: auto;
+  padding: 10px;
 }
 
 /* line 620, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
-section#contact .form-group textarea.form-control {
-  height: 236px;
+section#contact .form-group input.form-control {
+  height: auto;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
 }
 
-/* line 623, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 626, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+section#contact .form-group textarea.form-control {
+  height: 236px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 630, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact .form-control:focus {
   border-color: #00c4db;
   box-shadow: none;
 }
 
-/* line 627, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 634, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 
-/* line 633, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 640, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 
-/* line 640, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 647, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+  /* font-weight: 700; */
+  color: #000;
 }
 
-/* line 647, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 654, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-
-/* line 653, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
-section#contact .text-danger {
-  color: #e74c3c;
-}
-
-/* line 656, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
-footer {
-  padding: 25px 0;
-  text-align: center;
+  /* font-weight: 700; */
+  color: #000;
 }
 
 /* line 660, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+section#contact .text-danger {
+  background-color: #000;
+  color: #e74c3c;
+}
+
+/* line 664, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+footer {
+  padding: 5px 0;
+  text-align: center;
+  background-color: #000;
+}
+
+/* line 669, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+  color: #00c4db;
 }
 
-/* line 666, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 676, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
@@ -896,12 +897,12 @@ footer ul.quicklinks {
   text-transform: none;
 }
 
-/* line 673, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 683, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 ul.social-buttons {
   margin-bottom: 0;
 }
 
-/* line 676, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 686, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 ul.social-buttons li a {
   display: block;
   background-color: #222222;
@@ -917,14 +918,14 @@ ul.social-buttons li a {
   transition: all 0.3s;
 }
 
-/* line 690, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 700, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #00c4db;
 }
 
-/* line 695, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 705, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -932,14 +933,14 @@ ul.social-buttons li a:active {
   outline: none;
 }
 
-/* line 701, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 711, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
   width: auto;
 }
 
-/* line 706, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 716, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -951,18 +952,18 @@ ul.social-buttons li a:active {
   text-align: center;
 }
 
-/* line 716, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 726, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
   font-size: 3em;
 }
 
-/* line 720, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 730, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
 
-/* line 723, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 733, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -970,18 +971,18 @@ ul.social-buttons li a:active {
   font-size: 16px;
 }
 
-/* line 729, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 739, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
 }
 
-/* line 733, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 743, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
 
-/* line 736, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 746, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
@@ -992,12 +993,12 @@ ul.social-buttons li a:active {
   cursor: pointer;
 }
 
-/* line 745, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 755, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
 
-/* line 748, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 758, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .close-modal .lr {
   height: 75px;
   width: 1px;
@@ -1011,7 +1012,7 @@ ul.social-buttons li a:active {
   z-index: 1051;
 }
 
-/* line 760, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 770, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
@@ -1024,35 +1025,35 @@ ul.social-buttons li a:active {
   z-index: 1052;
 }
 
-/* line 771, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 781, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
 }
 
-/* line 775, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 785, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 ::-moz-selection {
   text-shadow: none;
   background: #00c4db;
 }
 
-/* line 779, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 789, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 ::selection {
   text-shadow: none;
   background: #00c4db;
 }
 
-/* line 783, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 793, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 img::selection {
   background: transparent;
 }
 
-/* line 786, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 796, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 789, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
+/* line 799, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/themecustom.scss.erb */
 body {
   webkit-tap-highlight-color: #00c4db;
 }

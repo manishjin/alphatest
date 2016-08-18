@@ -11,39 +11,56 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :First_Name %><br>
-    <%= f.text_field :First_Name %>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Proporcionar detalles de nuevo transportista
+      </div>
+      <div class="panel-body">
+        <form role="form">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6">
+              <div class="form-group">
+                <label>Nombre</label>
+                <%= f.text_field :First_Name, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Apellidos</label>
+                <%= f.text_field :Last_Name, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Teléfono</label>
+                <%= f.number_field :Telephone, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>E-mail</label>
+                <%= f.text_field :Email, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Matrícula</label>
+                <%= f.text_field :Truck_No, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Número de Seguridad Social</label>
+                <%= f.text_field :Social_Sec, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <label>Verificado</label>
+                <%= f.check_box :Verified, class: "checkbox" %>
+              </div>
+              <div class="form-group">
+                <label>ID del Empresa</label>
+                <%= f.text_field :company_id, class: "form-control" %>
+              </div><div class="actions">
+                <%= f.submit "Añadir Transportista", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :Last_Name %><br>
-    <%= f.text_field :Last_Name %>
-  </div>
-  <div class="field">
-    <%= f.label :Telephone %><br>
-    <%= f.number_field :Telephone %>
-  </div>
-  <div class="field">
-    <%= f.label :Email %><br>
-    <%= f.text_field :Email %>
-  </div>
-  <div class="field">
-    <%= f.label :Truck_No %><br>
-    <%= f.text_field :Truck_No %>
-  </div>
-  <div class="field">
-    <%= f.label :Social_Sec %><br>
-    <%= f.text_field :Social_Sec %>
-  </div>
-  <div class="field">
-    <%= f.label :Verified %><br>
-    <%= f.check_box :Verified %>
-  </div>
-  <div class="field">
-    <%= f.label :company_id %><br>
-    <%= f.text_field :company_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+
 <% end %>
