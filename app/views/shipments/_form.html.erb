@@ -16,123 +16,175 @@
   <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
-        Proporciona los detalles del envío
+        <a data-toggle="collapse" href="#collapse1">Proporciona los detalles del envío (haga clic para mostrar/ocultar información)</a>
       </div>
-      <div class="panel-body">
-        <form role="form">
+      <div id="collapse1" class="panel-collapse collapse <%= @infodisplay %>">
+        <div class="panel-body">
+          <!-- <form role="form"> -->
+            <fieldset <%= @editable %>>
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <div class="form-group">
+                    <label>Sub-envío: está asociado con otro envío ya creado</label>
+                    <%= f.check_box :Sub_Shipment, class: "checkbox" %>
+                  </div>
+                  <div class="form-group">
+                    <label>En caso afirmativo, proporciona el ID del envío asociado</label>
+                    <%= f.number_field :Parent_Shipment_ID, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Estado</label>
+                    <%= f.text_field :Status, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>ID del Cliente (si está disponible)</label>
+                    <%= f.text_field :Client_ID, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Nombre del Cliente</label>
+                    <%= f.text_area :Client_Name, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Dirección de Recogida</label>
+                    <%= f.text_area :Pickup_Location, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Fecha de Recogida</label>
+                    <%= f.date_select :Pickup_Date, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Hora inicio de Recogida</label>
+                    <%= f.time_select :Pickup_Start_Time, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Hora límite de Recogida</label>
+                    <%= f.time_select :Pickup_End_Time, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Puerta de recogida</label>
+                    <%= f.number_field :Pickup_Gate, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Nombre de Contacto en Recogida</label>
+                    <%= f.text_field :Pickup_Contact_Person, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Número de Contacto en Recogida</label>
+                    <%= f.number_field :Pickup_Contact_No, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <!-- <label>ID del Empresa</label> -->
+                    <%= f.text_field :company_id, class: "form-control", type: "hidden" %>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <div class="form-group">
+                    <label>Peso del Envío</label>
+                    <%= f.number_field :Weight, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Paletizado?</label>
+                    <%= f.check_box :Palletized, class: "checkbox" %>
+                  </div>
+                  <div class="form-group">
+                    <label>En caso afirmativo, Número de palets?</label>
+                    <%= f.number_field :No_of_Pallets, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Dirección de Entrega</label>
+                    <%= f.text_area :Dropoff_Location, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Fecha de Entrega</label>
+                    <%= f.date_select :Dropoff_Date, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Hora inicio de Entrega</label>
+                    <%= f.time_select :Dropoff_Start_Time, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Hora límite de Entrega</label>
+                    <%= f.time_select :Dropff_End_Time, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Puerta de Entrega</label>
+                    <%= f.number_field :Dropoff_Gate, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Nombre de Contacto en Entrega</label>
+                    <%= f.text_field :Dropoff_Contact_Person, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Número de Contacto en Entrega</label>
+                    <%= f.number_field :Dropff_Contact_No, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Comentarios adicionales</label>
+                    <%= f.text_area :Comments, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Tipo de carga</label>
+                    <%= f.text_area :Cargo_Type, class: "form-control" %>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="display: <%= @allocdisplay%>" id="allocdetails">
+                <div class="col-lg-12 col-sm-12">
+                  <h3>Detalles de asignación</h3>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                      <label>Truck Type</label>
+                      <%= f.text_field :Allocated_Truck_Type, class: "form-control" %>
+                    </div>
+                    <div class="form-group">
+                      <label>Assign to</label>
+                      <%= f.text_field :Assigned_To, class: "form-control" %>
+                    </div>
+                    <div class="form-group">
+                      <label>Company ID, if assigned to a company</label>
+                      <%= f.text_field :Allocated_Company_ID, class: "form-control" %>
+                    </div>
+                    <div class="form-group">
+                      <label>Driver ID</label>
+                      <%= f.text_field :Driver_ID, class: "form-control" %>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                      <label>Contact Person</label>
+                      <%= f.text_field :Allocated_Contact_Person, class: "form-control" %>
+                    </div>
+                    <div class="form-group">
+                      <label>No of contact person</label>
+                      <%= f.number_field :Allocated_Contact_No, class: "form-control" %>
+                    </div>
+                    <div class="form-group">
+                      <label>Allocation Date</label>
+                      <%= f.date_select :Allocation_Date, class: "form-control" %>
+                    </div>
+                    <div class="form-group">
+                      <label>Allocated By</label>
+                      <%= f.text_field :Allocated_By, class: "form-control" %>
+                    </div>
+                  </div>
+              </div>
+            </fieldset>
+
+          <!-- </form> -->
+        </div>
+        <div class="panel-footer" style="display: <%= @footerdisplay %>">
           <div class="row">
-            <div class="col-lg-6 col-sm-6">
-              <div class="form-group">
-                <label>Sub-envío: está asociado con otro envío ya creado</label>
-                <%= f.check_box :Sub_Shipment, class: "checkbox" %>
+              <div class="col-lg-12">
+                <div class="actions text-center">
+                <%= f.submit "Ahorra Envío", class: "btn btn-primary" %>
+                <%= render 'back' %>
+                </div>
               </div>
-              <div class="form-group">
-                <label>En caso afirmativo, proporciona el ID del envío asociado</label>
-                <%= f.number_field :Parent_Shipment_ID, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Estado</label>
-                <%= f.text_field :Status, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>ID del Cliente (si está disponible)</label>
-                <%= f.text_field :Client_ID, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Nombre del Cliente</label>
-                <%= f.text_area :Client_Name, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Dirección de Recogida</label>
-                <%= f.text_area :Pickup_Location, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Fecha de Recogida</label>
-                <%= f.date_select :Pickup_Date, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Hora inicio de Recogida</label>
-                <%= f.time_select :Pickup_Start_Time, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Hora límite de Recogida</label>
-                <%= f.time_select :Pickup_End_Time, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Puerta de recogida</label>
-                <%= f.number_field :Pickup_Gate, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Nombre de Contacto en Recogida</label>
-                <%= f.text_field :Pickup_Contact_Person, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Número de Contacto en Recogida</label>
-                <%= f.number_field :Pickup_Contact_No, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>ID del Empresa</label>
-                <%= f.text_field :company_id, class: "form-control" %>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-              <div class="form-group">
-                <label>Peso del Envío</label>
-                <%= f.number_field :Weight, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Paletizado?</label>
-                <%= f.check_box :Palletized, class: "checkbox" %>
-              </div>
-              <div class="form-group">
-                <label>En caso afirmativo, Número de palets?</label>
-                <%= f.number_field :No_of_Pallets, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Dirección de Entrega</label>
-                <%= f.text_area :Dropoff_Location, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Fecha de Entrega</label>
-                <%= f.date_select :Dropoff_Date, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Hora inicio de Entrega</label>
-                <%= f.time_select :Dropoff_Start_Time, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Hora límite de Entrega</label>
-                <%= f.time_select :Dropff_End_Time, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Puerta de Entrega</label>
-                <%= f.number_field :Dropoff_Gate, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Nombre de Contacto en Entrega</label>
-                <%= f.text_field :Dropoff_Contact_Person, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Número de Contacto en Entrega</label>
-                <%= f.number_field :Dropff_Contact_No, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Comentarios adicionales</label>
-                <%= f.text_area :Comments, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <label>Tipo de carga</label>
-                <%= f.text_area :Cargo_Type, class: "form-control" %>
-              </div>
-              <div class="actions">
-                <%= f.submit "Crear Envío", class: "btn btn-primary" %>
-              </div>
-            </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 <% end %>

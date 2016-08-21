@@ -50,10 +50,11 @@
                 <%= f.text_field :Country, class: "form-control" %>
               </div>              
               <div class="form-group">
-                <label>ID del Empresa</label>
-                <%= f.text_field :company_id, class: "form-control" %>
+                <!-- <label>ID del Empresa</label> -->
+                <%= f.text_field :company_id, class: "form-control", type: "hidden" %>
               </div><div class="actions">
                 <%= f.submit "Crear Empleado", class: "btn btn-primary" %>
+                <a href="<%= company_employees_path %>" class="page-scroll btn btn-primary">Atrás</a>
               </div>
             </div>
           </div>

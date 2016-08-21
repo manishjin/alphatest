@@ -68,7 +68,7 @@
                         <th data-breakpoints="xs sm md lg">Número de palets</th>
                         <th data-breakpoints="xs sm md lg">Tipo de carga</th>
                         <th data-breakpoints="xs sm md lg">Empresa</th>
-                        <th data-type="html">Detalles</th>
+                        <th data-type="html"></th>
                       </tr>
                     </thead>
                     
@@ -92,7 +92,20 @@
                         <td><%= shipment.No_of_Pallets %></td>
                         <td><%= shipment.Cargo_Type %></td>
                         <td><%= shipment.company_id %></td>
-                        <td><%= link_to 'Acceso', company_shipment_path(@company, shipment) %></td>
+                        <td class="text-center" style="max-width:60px">
+                            <%= link_to edit_company_shipment_path(@company,shipment,anchor:"allocdetails"), :title => 'Asignar', :rel => 'tooltip' do %>
+                            <span class="glyphicon glyphicon-paste" style="padding-right:10px"></span>
+                            <% end %>
+                            <%= link_to edit_company_shipment_path(@company,shipment), :title => 'Editar', :rel => 'tooltip' do %>
+                            <span class="glyphicon glyphicon-edit" style="padding-right:10px"></span>
+                            <% end %>
+                            <%= link_to company_shipment_path(@company,shipment), :title => 'Mensaje', :rel => 'tooltip' do %>
+                            <span class="glyphicon glyphicon-comment" style="padding-right:10px"></span>
+                            <% end %>
+                            <%= link_to company_shipment_path(@company,shipment), :title => 'Borrar', :rel => 'tooltip', method: :delete, data: { confirm: "¿Estás seguro?" } do %>
+                            <span class="glyphicon glyphicon-trash" style="padding-right:5px"></span>
+                            <% end %>
+                        </td>
                       </tr>
                     <% end %>
                     </tbody>

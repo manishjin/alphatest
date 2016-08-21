@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :drivers
     resources :shipments do
       post 'message', on: :member
-    end
+        end
   end
   
   root 'pages#home'

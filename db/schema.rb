@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160806112557) do
+ActiveRecord::Schema.define(version: 20160820130036) do
 
   create_table "clients", force: :cascade do |t|
     t.text     "Name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20160806112557) do
     t.string   "UpdatedBy"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "Chat_ID"
   end
 
   create_table "drivers", force: :cascade do |t|
@@ -48,6 +49,7 @@ ActiveRecord::Schema.define(version: 20160806112557) do
     t.integer  "company_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "Chat_ID"
   end
 
   add_index "drivers", ["company_id"], name: "index_drivers_on_company_id"
@@ -93,8 +95,18 @@ ActiveRecord::Schema.define(version: 20160806112557) do
     t.text     "Comments"
     t.text     "Cargo_Type"
     t.integer  "company_id"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "Allocated_Truck_Type"
+    t.string   "Assigned_To"
+    t.string   "Allocated_Company_ID"
+    t.string   "Driver_ID"
+    t.string   "Allocated_Contact_Person"
+    t.integer  "Allocated_Contact_No"
+    t.date     "Allocation_Date"
+    t.string   "Allocated_By"
+    t.string   "Chat_ID"
+    t.text     "Chat_Message"
   end
 
   add_index "shipments", ["company_id"], name: "index_shipments_on_company_id"

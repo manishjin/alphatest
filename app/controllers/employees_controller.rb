@@ -17,6 +17,7 @@ class EmployeesController < ApplicationController
   def new
     @company = Company.find(params[:company_id])
     @employee = Employee.new
+    @employee.company_id = @company.id
   end
 
   # GET /employees/1/edit

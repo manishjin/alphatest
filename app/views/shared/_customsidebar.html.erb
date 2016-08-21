@@ -10,6 +10,9 @@
         <%= link_to 'Panel principal', company_path(@company) %>
     </li>
     <li>
+        <%= link_to 'Envíos', company_shipments_path(@company) %>
+    </li>
+    <li>
         <%= link_to 'Clientes', company_clients_path(@company) %>
     </li>
     <li>
@@ -19,6 +22,12 @@
         <%= link_to 'Transportistas', company_drivers_path(@company) %>
     </li>
     <li>
-        <%= link_to 'Envíos', company_shipments_path(@company) %>
+        <%= link_to 'Telegram', "https://web.telegram.org/", :target => "_blank" %>
+    </li>
+    <li>
+        <%= link_to 'Life360', "https://www.life360.com/", :target => "_blank" %>
+    </li>
+    <li>
+        <%= link_to 'Help', company_shipments_path(@company) %>
     </li>
 </ul>

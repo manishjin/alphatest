@@ -46,10 +46,12 @@
                 <%= f.check_box :Verified, class: "checkbox" %>
               </div>
               <div class="form-group">
-                <label>ID del Empresa</label>
-                <%= f.text_field :company_id, class: "form-control" %>
-              </div><div class="actions">
+                <!-- <label>ID del Empresa</label> -->
+                <%= f.text_field :company_id, class: "form-control", type: "hidden" %>
+              </div>
+              <div class="actions">
                 <%= f.submit "Crear Cliente", class: "btn btn-primary" %>
+                <a href="<%= company_clients_path %>" class="page-scroll btn btn-primary">Atrás</a>
               </div>
             </div>
           </div>

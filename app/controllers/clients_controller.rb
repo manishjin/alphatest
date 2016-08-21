@@ -17,6 +17,7 @@ class ClientsController < ApplicationController
   def new
     @company = Company.find(params[:company_id])
     @client = Client.new
+    @client.company_id = @company.id
   end
 
   # GET /clients/1/edit

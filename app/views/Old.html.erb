@@ -316,3 +316,4 @@ class CompaniesController < ApplicationController
     end
 end
 -->
+<%= link_to "Send Message", message_company_shipment_path(@company,@shipment, mesg: "hello"), method: :post, class: "btn btn-primary" %>

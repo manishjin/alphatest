@@ -50,10 +50,11 @@
                 <%= f.check_box :Verified, class: "checkbox" %>
               </div>
               <div class="form-group">
-                <label>ID del Empresa</label>
-                <%= f.text_field :company_id, class: "form-control" %>
+                <!-- <label>ID del Empresa</label> -->
+                <%= f.text_field :company_id, class: "form-control", type: "hidden" %>
               </div><div class="actions">
                 <%= f.submit "Añadir Transportista", class: "btn btn-primary" %>
+                <a href="<%= company_drivers_path %>" class="page-scroll btn btn-primary">Atrás</a>
               </div>
             </div>
           </div>

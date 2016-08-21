@@ -17,6 +17,7 @@ class DriversController < ApplicationController
   def new
     @company = Company.find(params[:company_id])
     @driver = Driver.new
+    @driver.company_id = @company.id
   end
 
   # GET /drivers/1/edit

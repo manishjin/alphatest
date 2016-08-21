@@ -13959,63 +13959,6 @@ var o,i,s,a,u;return i=null!=n?n:{},a=i.restorationIdentifier,s=i.restorationDat
 
 
 
-(function($, F) {
-	var $modal = $('#editor-modal'),
-	$editor = $('#editor'),
-	$editorTitle = $('#editor-title'),
-	ft = FooTable.init('#editing-example', {
-		editing: {
-			enabled: true,
-			addRow: function(){
-				$modal.removeData('row');
-				$editor[0].reset();
-				$editorTitle.text('Add a new row');
-				$modal.modal('show');
-			},
-			editRow: function(row){
-				var values = row.val();
-				$editor.find('#id').val(values.id);
-				$editor.find('#shipment_Status').val(values.shipment_Status);
-				$editor.find('#shipment_Client_Name').val(values.shipment_Client_Name);
-				$editor.find('#shipment_Pickup_Location').val(values.shipment_Pickup_Location);
-				$editor.find('#shipment_Pickup_Gate').val(values.shipment_Pickup_Gate);
-				$editor.find('#shipment_Pickup_Contact_Person').val(values.shipment_Pickup_Contact_Person);
-
-				$modal.data('row', row);
-				$editorTitle.text('Edit row #' + values.id);
-				$modal.modal('show');
-			},
-			deleteRow: function(row){
-				if (confirm('Are you sure you want to delete the row?')){
-					row.delete();
-				}
-			}
-		}
-	}),
-	uid = 10;
-
-$editor.on('submit', function(e){
-	if (this.checkValidity && !this.checkValidity()) return;
-	e.preventDefault();
-	var row = $modal.data('row'),
-		values = {
-			id: $editor.find('#id').val(),
-			shipment_Status: $editor.find('#shipment_Status').val(),
-			shipment_Client_Name: $editor.find('#shipment_Client_Name').val(),
-			shipment_Pickup_Location: $editor.find('#shipment_Pickup_Location').val(),
-			shipment_Pickup_Gate: $editor.find('#shipment_Pickup_Gate').val(),
-			shipment_Pickup_Contact_Person: $editor.find('#shipment_Pickup_Contact_Person').val()
-		};
-
-	if (row instanceof FooTable.Row){
-		row.val(values);
-	} else {
-		values.id = uid++;
-		ft.rows.add(values);
-	}
-	$modal.modal('hide');
-});
-})(jQuery, FooTable);
 // Agency Theme JavaScript
 
 (function($) {
@@ -14050,6 +13993,10 @@ $editor.on('submit', function(e){
 
 })(jQuery); // End of use strict
 ;
+(function() {
+
+
+}).call(this);
 (function() {
 
 
