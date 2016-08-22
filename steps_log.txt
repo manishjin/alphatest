@@ -127,3 +127,4 @@ rails g migration AddAllocationDetailsToShipments Allocated_Truck_Type:string As
 
 	* It created 20160820125555_add_allocation_details_to_shipments.rb
 	
+17) Xavi - 218355064

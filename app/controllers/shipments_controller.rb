@@ -67,7 +67,7 @@ class ShipmentsController < ApplicationController
 
   def message
     token = '170792074:AAEI62XZtwwo9pHjzWav--fcye6y6YAtNJA'
-    messagechatid = '244762094'
+    messagechatid = '218355064'
     messagetext = params[:shipment][:Chat_Message]
     
     Telegram::Bot::Client.run(token) do |bot|
