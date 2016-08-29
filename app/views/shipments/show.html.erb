@@ -26,7 +26,7 @@
         </div>
         
         <% @infodisplay="" %>
-        <% @allocdisplay="none"%>
+        <% @allocdisplay=""%>
         <% @footerdisplay="none"%>
         <% @editable="disabled"%>
         <% @messagedisplay="inherit"%>
@@ -36,14 +36,18 @@
         <div class="row" style="display: <%= @messagedisplay %>">
           <div class="col-md-6 col-md-offset-3">
             <div class="form-group text-center">
+            <h4 id="notice" style="color:green"><%= notice %></h4>
             <%= ff.text_area :Chat_Message, class: "form-control", placeholder: "Entre su mensaje" %><br>
             <%= ff.submit "Enviar Mensaje", class: "btn btn-primary" %>
             <a href="<%= company_shipments_path %>" class="btn btn-primary">Atrás</a>
-            <%= link_to 'Ver conversación', "https://web.telegram.org/", :target => "_blank", class: "btn btn-primary" %>
+            <%= link_to 'Ver conversación', @chaturl , :target => "_blank", class: "btn btn-primary" %>
             </div>
           </div>
         </div>
         <% end %>
+        <div class="container-fluid">
+          <iframe src="https://web.telegram.org/" width="100%" height="100%"></iframe>
+        </div>
       </div>
     </div>
 </body>

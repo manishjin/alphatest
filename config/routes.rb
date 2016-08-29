@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :enquiries
   resources :companies do
+      get 'help', on: :member
     resources :clients
     resources :employees
     resources :drivers

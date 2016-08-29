@@ -1,0 +1,33 @@
+<%= form_for(@enquiry) do |f| %>
+  <% if @enquiry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
+
+      <ul>
+      <% @enquiry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+  </div>
+  <div class="field">
+    <%= f.label :Telephone %><br>
+    <%= f.number_field :Telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :Message %><br>
+    <%= f.text_area :Message %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

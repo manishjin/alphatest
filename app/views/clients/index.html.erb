@@ -49,6 +49,7 @@
                         <th data-breakpoints="xs sm md lg">Dirección de facturación</th>
                         <th data-breakpoints="xs sm md lg">NIF</th>
                         <th data-breakpoints="xs sm md lg">Verificado</th>
+                        <th data-type="html"></th>
                       </tr>
                     </thead>
                     
@@ -61,6 +62,14 @@
                         <td><%= client.Billing_Address %></td>
                         <td><%= client.NIF %></td>
                         <td><%= client.Verified %></td>
+                        <td class="text-center" style="max-width:40px">
+                            <%= link_to edit_company_client_path(@company,client), :title => 'Editar', :rel => 'tooltip' do %>
+                            <span class="glyphicon glyphicon-edit" style="padding-right:10px"></span>
+                            <% end %>
+                            <%= link_to company_client_path(@company,client), :title => 'Borrar', :rel => 'tooltip', method: :delete, data: { confirm: "¿Estás seguro?" } do %>
+                            <span class="glyphicon glyphicon-trash" style="padding-right:5px"></span>
+                            <% end %>
+                        </td>
                       </tr>
                     <% end %>
                     </tbody>

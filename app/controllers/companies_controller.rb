@@ -21,6 +21,7 @@ class CompaniesController < ApplicationController
 
   # GET /companies/1/edit
   def edit
+     @company = Company.find(params[:id])
   end
 
   # POST /companies # POST /companies.json
@@ -37,9 +38,10 @@ class CompaniesController < ApplicationController
 
   # PATCH/PUT /companies/1 # PATCH/PUT /companies/1.json
   def update
+    @company = Company.find(params[:id])
     respond_to do |format|
       if @company.update(company_params)
-        format.html { redirect_to @company, notice: 'Company was successfully updated.' }
+        format.html { redirect_to companies_path, notice: 'Company was successfully updated.' }
         format.json { render :show, status: :ok, location: @company }
       else
         format.html { render :edit }
@@ -50,11 +52,16 @@ class CompaniesController < ApplicationController
 
   # DELETE /companies/1 # DELETE /companies/1.json
   def destroy
+    @company = Company.find(params[:id])
     @company.destroy
     respond_to do |format|
       format.html { redirect_to companies_url, notice: 'Company was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def help
+    @company = Company.find(params[:id])
   end
 
   # # DETAILS 
@@ -72,6 +79,6 @@ class CompaniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
-      params.require(:company).permit(:Name, :Address, :NIF, :CreatedBy, :UpdatedBy)
+      params.require(:company).permit(:Name, :Address, :NIF, :CreatedBy, :UpdatedBy, :Chat_ID)
     end
 end

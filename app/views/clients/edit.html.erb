@@ -1,6 +1,34 @@
-<h1>Editing Client</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<%= render 'form' %>
+<head>
 
-<%= link_to 'Show', @client %> |
-<%= link_to 'Back', clients_path %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>View Driver Details</title>
+</head>
+
+<body>
+	<div id="wrapper">
+	    <div id="page-wrapper">
+	      <div class="container-fluid">
+	        <div class="row">
+	          <div class="col-md-11">
+	            <h1 class="page-header">Editar Cliente</h1>
+	          </div>
+	          <div class="col-md-1 page-header">
+	            <a href="<%= company_clients_path(@company) %>" class="page-scroll btn btn-primary">Atrás</a>
+	          </div>
+	        </div>
+			
+			<%= render 'form' %>
+
+			</div>
+	    </div>
+	</div>
+</body>
+</html>

@@ -11,6 +11,17 @@ class ShipmentsController < ApplicationController
   # GET /shipments/1
   # GET /shipments/1.json
   def show
+    if !@shipment.Driver_ID.blank?
+      begin
+      @driver=Driver.find(@shipment.Driver_ID)
+      messagechatid = @driver.Chat_ID
+      @chaturl="https://web.telegram.org/#/im?p=u#{messagechatid}"
+      rescue
+      @chaturl="https://web.telegram.org/"
+      end
+    else
+      @chaturl="https://web.telegram.org/"
+    end
   end
 
   # GET /shipments/new
@@ -18,6 +29,7 @@ class ShipmentsController < ApplicationController
     @company = Company.find(params[:company_id])
     @shipment = Shipment.new
     @shipment.company_id = @company.id
+    @shipment.Status = "Por asignar"
   end
 
   # GET /shipments/1/edit
@@ -66,14 +78,25 @@ class ShipmentsController < ApplicationController
   end
 
   def message
-    token = '170792074:AAEI62XZtwwo9pHjzWav--fcye6y6YAtNJA'
-    messagechatid = '218355064'
-    messagetext = params[:shipment][:Chat_Message]
+    # messagechatid = '244762094'
     
-    Telegram::Bot::Client.run(token) do |bot|
-    # bot.api.send_photo(chat_id: messagechatid, photo: Faraday::UploadIO.new('C:\Users\Manish\Desktop\AT.jpg', 'image/jpeg'))
-    bot.api.send_message(chat_id: messagechatid, text: messagetext)
-    redirect_to company_shipments_path(@company)
+    if !@shipment.Driver_ID.blank?
+      token = @company.Chat_ID
+      begin
+      @driver=Driver.find(@shipment.Driver_ID)
+        messagechatid = @driver.Chat_ID
+        messagetext = params[:shipment][:Chat_Message]
+        
+        Telegram::Bot::Client.run(token) do |bot|
+        # bot.api.send_photo(chat_id: messagechatid, photo: Faraday::UploadIO.new('C:\Users\Manish\Desktop\AT.jpg', 'image/jpeg'))
+        bot.api.send_message(chat_id: messagechatid, text: messagetext)
+        redirect_to company_shipment_path(@company,@shipment), notice: 'Mensaje fue enviado con éxito.'
+        end
+      rescue
+      redirect_to company_shipment_path(@company,@shipment), notice: 'No se encontró información para el conductor. Mensaje no fue enviado!'
+      end
+    else
+      redirect_to company_shipment_path(@company,@shipment), notice: 'No se encontró información para el conductor. Mensaje no fue enviado.'
     end 
   end
 

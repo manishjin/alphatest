@@ -50,6 +50,7 @@
                         <th data-breakpoints="xs sm md lg">E-mail</th>
                         <th data-breakpoints="xs sm md lg">Número de Seguridad Social</th>
                         <th data-breakpoints="xs sm md lg">Verificado</th>
+                        <th data-type="html"></th>
                       </tr>
                     </thead>
                     
@@ -64,6 +65,14 @@
                         <td><%= driver.Email %></td>
                         <td><%= driver.Social_Sec %></td>
                         <td><%= driver.Verified %></td>
+                        <td class="text-center" style="max-width:40px">
+                            <%= link_to edit_company_driver_path(@company,driver), :title => 'Editar', :rel => 'tooltip' do %>
+                            <span class="glyphicon glyphicon-edit" style="padding-right:10px"></span>
+                            <% end %>
+                            <%= link_to company_driver_path(@company,driver), :title => 'Borrar', :rel => 'tooltip', method: :delete, data: { confirm: "¿Estás seguro?" } do %>
+                            <span class="glyphicon glyphicon-trash" style="padding-right:5px"></span>
+                            <% end %>
+                        </td>
                       </tr>
                     <% end %>
                     </tbody>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Company Summary</title>
+    <!-- Custom CSS -->
+    <%= stylesheet_link_tag 'footable.bootstrap.min', media: 'all' %>
+    <%= stylesheet_link_tag 'sidebarcustom', media: 'all' %>
+    <%= stylesheet_link_tag 'themecustom', media: 'all' %>
+    <%= stylesheet_link_tag 'custom', media: 'all' %>
+</head>
+<body>
+  <div id="wrapper">
+        <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <%= render "shared/customsidebar" %>
+    </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+    <div id="page-content-wrapper ">
+    <!-- <nav class="navbar navbar-inverse">
+      <div class="container">
+        <a href="/" class="btn btn-default navbar-btn">Home</a>
+      </div>
+    </nav> -->
+      <header id="customheader">
+        <div class="container-fluid">
+          <h5 style="text-align:left"><a href="#menu-toggle" id="menu-toggle">Mostrar/Ocultar Menú</a></h5>
+          <div class="intro-text">
+            <div class="intro-lead-in">ARAGONÉS TRANSPORTS</div>
+            <div class="intro-heading"> </div>
+          </div>
+        </div>
+      </header>
+      <section id="manage">
+        <%= render "shared/contactform" %>
+      </section>
+        <!-- /#page-content-wrapper -->
+      </div>
+      </div>
+    <!-- /#wrapper -->
+    <!-- Menu Toggle Script -->
+    <%= javascript_include_tag "footable.js" %>
+</body>
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</html>

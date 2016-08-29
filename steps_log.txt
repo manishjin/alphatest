@@ -128,3 +128,14 @@ rails g migration AddAllocationDetailsToShipments Allocated_Truck_Type:string As
 	* It created 20160820125555_add_allocation_details_to_shipments.rb
 	
 17) Xavi - 218355064
+Mani-244762094
+
+18) Generated model for enquiries
+rails g scaffold enquiries Name:string Email:string Telephone:integer Message:text
+
+
+
+--------------------------------------------
+page-content-wrapper - 	1017x1065
+custom-header - 		1017x429
+custom-header - 		1017x636

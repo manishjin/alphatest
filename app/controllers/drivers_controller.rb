@@ -46,7 +46,7 @@ class DriversController < ApplicationController
   def update
     respond_to do |format|
       if @driver.update(driver_params)
-        format.html { redirect_to @driver, notice: 'Driver was successfully updated.' }
+        format.html { redirect_to company_drivers_path(@company), notice: 'Driver was successfully updated.' }
         format.json { render :show, status: :ok, location: @driver }
       else
         format.html { render :edit }
@@ -60,7 +60,7 @@ class DriversController < ApplicationController
   def destroy
     @driver.destroy
     respond_to do |format|
-      format.html { redirect_to drivers_url, notice: 'Driver was successfully destroyed.' }
+      format.html { redirect_to company_drivers_path(@company) }
       format.json { head :no_content }
     end
   end
@@ -68,11 +68,12 @@ class DriversController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_driver
+      @company= Company.find(params[:company_id])
       @driver = Driver.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def driver_params
-      params.require(:driver).permit(:First_Name, :Last_Name, :Telephone, :Email, :Truck_No, :Social_Sec, :Verified, :company_id)
+      params.require(:driver).permit(:First_Name, :Last_Name, :Telephone, :Email, :Truck_No, :Social_Sec, :Verified, :company_id, :Chat_ID)
     end
 end
