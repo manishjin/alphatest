@@ -1,11 +1,13 @@
 <!-- Ensure there is @company object present -->
 <ul class="sidebar-nav">
     <li class="sidebar-brand">
-        <a href="/">Home</a>
+        <a href="/">Inico</a>
     </li>
-    <li class="sidebar-brand">
-        <a href="/companies">Empresas</a>
-    </li>
+    <% if current_user.email == "admin@transwiz.com" %>
+        <li class="sidebar-brand">
+            <a href="/companies">Empresas</a>
+        </li>
+    <% end %>
     <li>
         <%= link_to 'Panel principal', company_path(@company) %>
     </li>
@@ -29,5 +31,8 @@
     </li>
     <li>
         <%= link_to 'Help', help_company_path(@company) %>
+    </li>
+    <li>
+        <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
     </li>
 </ul>

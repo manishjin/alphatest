@@ -56,3 +56,6 @@ end
 
 #Added gem for telegram bot
 gem 'telegram-bot-ruby'
+
+#Added gem for user authentication and autherization
+gem 'devise'

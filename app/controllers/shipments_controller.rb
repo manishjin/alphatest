@@ -1,11 +1,18 @@
 class ShipmentsController < ApplicationController
   before_action :set_shipment, only: [:show, :edit, :update, :destroy, :message]
+  before_action :authenticate_user!
+  
   require 'telegram/bot'
   # GET /shipments
   # GET /shipments.json
   def index
     @company = Company.find(params[:company_id])
-    @shipments = @company.shipments
+    @company1 = Company.find_by_user_id(current_user.id)
+    if @company.id != @company1.id && current_user.email != "admin@transwiz.com"
+      @shipments = @company1.shipments
+    else
+      @shipments = @company.shipments
+    end
   end
 
   # GET /shipments/1

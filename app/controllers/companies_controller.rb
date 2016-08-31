@@ -1,5 +1,7 @@
 class CompaniesController < ApplicationController
   # before_action :set_company, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  
   # GET /companies # GET /companies.json
   def index
     set_company
@@ -55,13 +57,15 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
     @company.destroy
     respond_to do |format|
-      format.html { redirect_to companies_url, notice: 'Company was successfully destroyed.' }
+      format.html { redirect_to companies_path, notice: 'Company was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   def help
     @company = Company.find(params[:id])
+    @enquiry = Enquiry.new
+    @enquiry.Name = @company.Name
   end
 
   # # DETAILS 
@@ -79,6 +83,6 @@ class CompaniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
-      params.require(:company).permit(:Name, :Address, :NIF, :CreatedBy, :UpdatedBy, :Chat_ID)
+      params.require(:company).permit(:Name, :Address, :NIF, :CreatedBy, :UpdatedBy, :Chat_ID, :user_id)
     end
 end

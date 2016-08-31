@@ -46,6 +46,10 @@
                   <label>Chat Token</label>
                   <%= f.text_field :Chat_ID, class: "form-control" %>
               </div>
+              <div class="form-group" style="display:<%= @tokendisplay %>">
+                  <label>UserID</label>
+                  <%= collection_select(:company, :user_id, User.all, :id, :email, {}, {:class => 'form-control'}) %>
+              </div>
               <div class="actions">
                 <%= f.submit %>
               </div>

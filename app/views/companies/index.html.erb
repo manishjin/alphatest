@@ -104,6 +104,9 @@
                     <%= link_to edit_company_path(comp), :title => 'Editar', :rel => 'tooltip' do %>
                             <span class="glyphicon glyphicon-edit" style="padding-right:10px"></span>
                     <% end %>
+                    <%= link_to company_path(comp), :title => 'Borrar', :rel => 'tooltip', method: :delete, data: { confirm: "¿Estás seguro?" } do %>
+                            <span class="glyphicon glyphicon-trash" style="padding-right:5px"></span>
+                    <% end %>
                 </td>
                 <td><%= comp.CreatedBy %></td>
                 <td><%= comp.UpdatedBy %></td>

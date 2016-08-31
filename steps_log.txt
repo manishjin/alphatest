@@ -129,6 +129,7 @@ rails g migration AddAllocationDetailsToShipments Allocated_Truck_Type:string As
 	
 17) Xavi - 218355064
 Mani-244762094
+NaekoBot - 222455752:AAG7dI4nByMtJuTHbXBByN_YNH-W_nG5wRk
 
 18) Generated model for enquiries
 rails g scaffold enquiries Name:string Email:string Telephone:integer Message:text

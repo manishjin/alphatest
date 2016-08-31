@@ -1,7 +1,6 @@
 class Companymailer < ApplicationMailer
-	default from: "trufertrucks@gmail.com"
-
-	def contactemail
-		mail(to: "info@trans-wiz.com", subject: "test subject")
+	def contactemail(enquiry)
+		@enquiry = enquiry
+		mail(to: "info@trans-wiz.com", subject: "New Enquiry")
 	end
 end

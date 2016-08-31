@@ -29,7 +29,7 @@ class EnquiriesController < ApplicationController
 
     respond_to do |format|
       if @enquiry.save
-        Companymailer.contactemail.deliver
+        Companymailer.contactemail(@enquiry).deliver
         format.js {}
         format.html { redirect_to @enquiry, notice: 'Enquiry was successfully created.' }
         format.json { render :show, status: :created, location: @enquiry }

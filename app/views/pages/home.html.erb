@@ -54,9 +54,25 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contacto</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="/companies">Login</a>
-                    </li>
+                    <% if user_signed_in? %>
+                        <% if current_user.email == "admin@transwiz.com" %>
+                            <li>
+                                <%= link_to 'Entrar', companies_path, class: "page-scroll" %>
+                            </li>
+                        <% else %>
+                            <li>
+                                <%= link_to 'Entrar', company_shipments_path(@company), class: "page-scroll" %>
+                            </li>
+                        <% end %>
+                        <li>
+                            <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "page-scroll" %>
+                            <p>Logged in as <%= current_user.email %> </p>
+                        </li>
+                    <% else %>    
+                        <li>
+                            <a class="page-scroll" href="<%= new_user_session_path %>">Log In</a>
+                        </li>
+                    <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

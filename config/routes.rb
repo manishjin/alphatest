@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :enquiries
   resources :companies do
       get 'help', on: :member
