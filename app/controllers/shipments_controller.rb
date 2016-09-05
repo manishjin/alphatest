@@ -18,9 +18,9 @@ class ShipmentsController < ApplicationController
   # GET /shipments/1
   # GET /shipments/1.json
   def show
-    if !@shipment.Driver_ID.blank?
+    if !@shipment.driver_id.blank?
       begin
-      @driver=Driver.find(@shipment.Driver_ID)
+      @driver=Driver.find(@shipment.driver_id)
       messagechatid = @driver.Chat_ID
       @chaturl="https://web.telegram.org/#/im?p=u#{messagechatid}"
       rescue
@@ -87,10 +87,10 @@ class ShipmentsController < ApplicationController
   def message
     # messagechatid = '244762094'
     
-    if !@shipment.Driver_ID.blank?
+    if !@shipment.driver_id.blank?
       token = @company.Chat_ID
       begin
-      @driver=Driver.find(@shipment.Driver_ID)
+      @driver=Driver.find(@shipment.driver_id)
         messagechatid = @driver.Chat_ID
         messagetext = params[:shipment][:Chat_Message]
         
@@ -116,6 +116,6 @@ class ShipmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def shipment_params
-      params.require(:shipment).permit(:Sub_Shipment, :Parent_Shipment_ID, :Status, :Client_ID, :Client_Name, :Pickup_Location, :Pickup_Date, :Pickup_Start_Time, :Pickup_End_Time, :Pickup_Gate, :Pickup_Contact_Person, :Pickup_Contact_No, :Weight, :Palletized, :No_of_Pallets, :Dropoff_Location, :Dropoff_Date, :Dropoff_Start_Time, :Dropff_End_Time, :Dropoff_Gate, :Dropoff_Contact_Person, :Dropff_Contact_No, :Comments, :Cargo_Type, :company_id, :Chat_Message, :Allocated_Truck_Type, :Assigned_To, :Allocated_Company_ID, :Driver_ID, :Allocated_Contact_Person, :Allocated_Contact_No, :Allocated_Date, :Allocated_By, :Chat_ID, :OtherDriver, :OtherClient, :Volume, :Driver_Name)
+      params.require(:shipment).permit(:Sub_Shipment, :Parent_Shipment_ID, :Status, :Client_ID, :Client_Name, :Pickup_Location, :Pickup_Date, :Pickup_Start_Time, :Pickup_End_Time, :Pickup_Gate, :Pickup_Contact_Person, :Pickup_Contact_No, :Weight, :Palletized, :No_of_Pallets, :Dropoff_Location, :Dropoff_Date, :Dropoff_Start_Time, :Dropff_End_Time, :Dropoff_Gate, :Dropoff_Contact_Person, :Dropff_Contact_No, :Comments, :Cargo_Type, :company_id, :Chat_Message, :Allocated_Truck_Type, :Assigned_To, :Allocated_Company_ID, :driver_id, :Allocated_Contact_Person, :Allocated_Contact_No, :Allocated_Date, :Allocated_By, :Chat_ID, :OtherDriver, :OtherClient, :Volume, :Driver_Name)
     end
 end
