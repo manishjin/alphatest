@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160905202308) do
+ActiveRecord::Schema.define(version: 20160905203805) do
 
   create_table "clients", force: :cascade do |t|
     t.text     "Name"
@@ -110,7 +110,7 @@ ActiveRecord::Schema.define(version: 20160905202308) do
     t.string   "Allocated_Truck_Type"
     t.string   "Assigned_To"
     t.string   "Allocated_Company_ID"
-    t.string   "driver_id"
+    t.integer  "driver_id"
     t.string   "Allocated_Contact_Person"
     t.integer  "Allocated_Contact_No"
     t.date     "Allocation_Date"
