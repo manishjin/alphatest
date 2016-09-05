@@ -72,10 +72,7 @@ class CompaniesController < ApplicationController
   def reports
     @company = Company.find(params[:id])
     
-    @reportdata = Driver.joins("INNER JOIN shipments ON shipments.Driver_ID = drivers.id and shipments.company_id = drivers.company_id").where("shipments.company_id" => @company.id).group("drivers.First_Name").select("drivers.*, count(drivers.id) as driver_shipment_count")
-    
-
-    @reporttable = Driver.joins("INNER JOIN shipments ON shipments.Driver_ID = drivers.id and shipments.company_id = drivers.company_id").where("shipments.company_id" => @company.id).group("drivers.First_Name").select("drivers.First_Name, shipments.id,shipments.Status, shipments.Client_Name, shipments.Pickup_Date")
+    @reportdata = Driver.joins("INNER JOIN shipments ON shipments.\"Driver_ID\" = drivers.id and shipments.company_id = drivers.company_id").where("shipments.company_id" => @company.id).group("drivers.First_Name").select("drivers.*, count(drivers.id) as driver_shipment_count")
 
 
   #https://coderwall.com/p/u_bzaq/a-few-tips-about-includes-and-joins-in-rails-3
