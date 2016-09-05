@@ -1,0 +1,146 @@
+/* line 1, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* Toggle Styles */
+/* line 7, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#wrapper {
+  padding-left: 0;
+}
+
+/* line 11, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#customtransitions {
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+/* line 18, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#wrapper.toggled {
+  padding-left: 200px;
+}
+
+/* line 22, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 200px;
+  width: 0;
+  height: 100%;
+  margin-left: -200px;
+  overflow-y: auto;
+  background: #000;
+}
+
+/* line 33, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#wrapper.toggled #sidebar-wrapper {
+  width: 200px;
+}
+
+/* line 37, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+/* line 43, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -200px;
+}
+
+/* Sidebar Styles */
+/* line 50, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 59, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 66, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+  font-size: 16px;
+}
+
+/* line 73, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 79, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+/* line 84, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav > .sidebar-brand {
+  height: 45px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+/* line 90, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav > .sidebar-brand a {
+  color: #00c4db;
+  font-size: 18px;
+}
+
+/* line 95, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  /* line 101, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+  #wrapper {
+    padding-left: 200px;
+  }
+
+  /* line 105, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+
+  /* line 109, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+  #sidebar-wrapper {
+    width: 200px;
+  }
+
+  /* line 113, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  /* line 117, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  /* line 122, C:/Users/Manish/Desktop/Biz/Ruby On Rails/alphatest/app/assets/stylesheets/sidebarcustom.scss */
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}

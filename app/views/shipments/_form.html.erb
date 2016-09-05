@@ -38,7 +38,11 @@
                   </div>
                   <div class="form-group">
                     <label>ID del Cliente (si está disponible)</label>
-                    <%= collection_select(:shipment, :Client_ID, @company.clients, :id, :Name, {}, {:class => 'form-control'}) %>
+                    <%= collection_select(:shipment, :Client_ID, @company.clients, :id, :Name, {include_blank: 'Seleccione cliente'} , {:class => 'form-control'}) %>
+                  </div>
+                  <div class="form-group">
+                    <label>Otros (si no es cliente de presentar en el sistema)</label>
+                    <%= f.check_box :OtherClient, class: "checkbox" %>
                   </div>
                   <div class="form-group">
                     <label>Nombre del Cliente</label>
@@ -81,6 +85,10 @@
                   <div class="form-group">
                     <label>Peso del Envío</label>
                     <%= f.number_field :Weight, class: "form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <label>Volumen</label>
+                    <%= f.number_field :Volume, class: "form-control" %>
                   </div>
                   <div class="form-group">
                     <label>Paletizado?</label>
@@ -149,8 +157,20 @@
                       <label>ID del transportista</label>
                       <%= collection_select(:shipment, :Driver_ID, @company.drivers, :id, :full_name, {}, {:class => 'form-control'}) %>
                     </div>
+                    <div class="form-group">
+                      <label>Fecha de asignación</label>
+                      <%= f.date_select :Allocation_Date, class: "form-control" %>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                    <label>Otros (si no es transportista de presentar en el sistema)</label>
+                    <%= f.check_box :OtherDriver, class: "checkbox" %>
+                    </div>
+                    <div class="form-group">
+                      <label>Nombre de Transportista</label>
+                      <%= f.text_field :Driver_Name, class: "form-control",disabled: true %>
+                    </div>
                     <div class="form-group">
                       <label>Persona de Contacto</label>
                       <%= f.text_field :Allocated_Contact_Person, class: "form-control" %>
@@ -158,10 +178,6 @@
                     <div class="form-group">
                       <label>Número de contacto</label>
                       <%= f.number_field :Allocated_Contact_No, class: "form-control" %>
-                    </div>
-                    <div class="form-group">
-                      <label>Fecha de asignación</label>
-                      <%= f.date_select :Allocation_Date, class: "form-control" %>
                     </div>
                     <div class="form-group">
                       <label>Asignado por</label>

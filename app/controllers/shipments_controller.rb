@@ -116,6 +116,6 @@ class ShipmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def shipment_params
-      params.require(:shipment).permit(:Sub_Shipment, :Parent_Shipment_ID, :Status, :Client_ID, :Client_Name, :Pickup_Location, :Pickup_Date, :Pickup_Start_Time, :Pickup_End_Time, :Pickup_Gate, :Pickup_Contact_Person, :Pickup_Contact_No, :Weight, :Palletized, :No_of_Pallets, :Dropoff_Location, :Dropoff_Date, :Dropoff_Start_Time, :Dropff_End_Time, :Dropoff_Gate, :Dropoff_Contact_Person, :Dropff_Contact_No, :Comments, :Cargo_Type, :company_id, :Chat_Message, :Allocated_Truck_Type, :Assigned_To, :Allocated_Company_ID, :Driver_ID, :Allocated_Contact_Person, :Allocated_Contact_No, :Allocated_Date, :Allocated_By, :Chat_ID)
+      params.require(:shipment).permit(:Sub_Shipment, :Parent_Shipment_ID, :Status, :Client_ID, :Client_Name, :Pickup_Location, :Pickup_Date, :Pickup_Start_Time, :Pickup_End_Time, :Pickup_Gate, :Pickup_Contact_Person, :Pickup_Contact_No, :Weight, :Palletized, :No_of_Pallets, :Dropoff_Location, :Dropoff_Date, :Dropoff_Start_Time, :Dropff_End_Time, :Dropoff_Gate, :Dropoff_Contact_Person, :Dropff_Contact_No, :Comments, :Cargo_Type, :company_id, :Chat_Message, :Allocated_Truck_Type, :Assigned_To, :Allocated_Company_ID, :Driver_ID, :Allocated_Contact_Person, :Allocated_Contact_No, :Allocated_Date, :Allocated_By, :Chat_ID, :OtherDriver, :OtherClient, :Volume, :Driver_Name)
     end
 end

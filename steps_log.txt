@@ -130,11 +130,15 @@ rails g migration AddAllocationDetailsToShipments Allocated_Truck_Type:string As
 17) Xavi - 218355064
 Mani-244762094
 NaekoBot - 222455752:AAG7dI4nByMtJuTHbXBByN_YNH-W_nG5wRk
+NaekoChat (local) - 166402393
+
+TransAragonesBot - 266952038:AAFz3TCbKe2UE2cwgySF0l8dwqiTckiAEBI
 
 18) Generated model for enquiries
 rails g scaffold enquiries Name:string Email:string Telephone:integer Message:text
 
-
+19) Generated migration to add columns to shipments table
+rails g migration AddFurtherDetailsToShipments Volume:string OtherClient:boolean OtherDriver:boolean Driver_Name:string
 
 --------------------------------------------
 page-content-wrapper - 	1017x1065

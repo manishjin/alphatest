@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160830213536) do
+ActiveRecord::Schema.define(version: 20160905181429) do
 
   create_table "clients", force: :cascade do |t|
     t.text     "Name"
@@ -117,6 +117,10 @@ ActiveRecord::Schema.define(version: 20160830213536) do
     t.string   "Allocated_By"
     t.string   "Chat_ID"
     t.text     "Chat_Message"
+    t.string   "Volume"
+    t.boolean  "OtherClient"
+    t.boolean  "OtherDriver"
+    t.string   "Driver_Name"
   end
 
   add_index "shipments", ["company_id"], name: "index_shipments_on_company_id"

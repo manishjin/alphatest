@@ -12,6 +12,9 @@
         <%= link_to 'Panel principal', company_path(@company) %>
     </li>
     <li>
+        <%= link_to 'Reports', reports_company_path(@company, :anchor => "reports") %>
+    </li>
+    <li>
         <%= link_to 'Envíos', company_shipments_path(@company) %>
     </li>
     <li>

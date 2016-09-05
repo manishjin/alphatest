@@ -1,0 +1,32 @@
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#<%= dname %>"><%= dname %>
+</button>
+<table class="table table-striped table-bordered collapse" data-paging="true" data-filtering="true" data-sorting="true" id="<%= dname %>">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Teléfono</th>
+        <th>Matrícula</th>
+        <th data-breakpoints="xs sm md lg">Empresa</th>
+        <th data-breakpoints="xs sm md lg">E-mail</th>
+        <th data-breakpoints="xs sm md lg">Número de Seguridad Social</th>
+        <th data-breakpoints="xs sm md lg">Verificado</th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+    <% @reporttable.each do |drivershipment| %>
+      <tr>
+        <td><%= drivershipment.id %></td>
+        <td><%= drivershipment.Status %></td>
+        <td><%= drivershipment.Client_Name %></td>
+        <td><%= drivershipment.Driver_ID %></td>
+        <td><%= drivershipment.Cargo_Type %></td>
+        <td><%= drivershipment.Pickup_Date %></td>
+        <td><%= drivershipment.Weight %></td>
+        <td><%= drivershipment.company_id %></td>
+      </tr>
+    <% end %>
+    </tbody>
+</table>

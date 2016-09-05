@@ -36,6 +36,16 @@
 	    </div>
 	</div>
 </body>
+<script>
+$(function () {
+    var $checkbox = $('[id^="shipment_OtherClient"]'),
+        $select = $('#shipment_Client_Name');
+
+    $checkbox.change(function (e) {
+        $select.prop('disabled', !$checkbox.is(':checked'))
+    });
+});
+</script>
 </html>
 
 <!-- 

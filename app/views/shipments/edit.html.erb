@@ -37,4 +37,25 @@
 	    </div>
 	</div>
 </body>
+<script>
+$(function () {
+    var $checkbox = $('[id^="shipment_OtherClient"]'),
+        $select = $('#shipment_Client_Name');
+        $select.prop('disabled', !$checkbox.is(':checked'));
+
+    $checkbox.change(function (e) {
+        $select.prop('disabled', !$checkbox.is(':checked'))
+    });
+});
+
+$(function () {
+    var $checkbox = $('[id^="shipment_OtherDriver"]'),
+        $select = $('#shipment_Driver_Name');
+        $select.prop('disabled', !$checkbox.is(':checked'));
+    
+    $checkbox.change(function (e) {
+        $select.prop('disabled', !$checkbox.is(':checked'))
+    });
+});
+</script>
 </html>

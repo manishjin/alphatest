@@ -1,0 +1,29 @@
+Reports-
+a) Daily driver report
+	* Each driver - number of shipments, time taken for each shipment, total time
+
+		|
+	#	|
+	S	|
+	h	|
+	i	|			 __
+	p	|			|  |
+	m	|	 __ 	|  |
+	e	|	|  |	|  |
+	n	|	|  |	|7 |
+	t	|	|5 |	|  |
+	s	|	|  |	|  |
+		|___|__|____|__|_____________________________
+			Mani	Maxi 	Xavi	Albert
+
+				D r i v e r
+
+
+
+select Driver, COUNT(*) from drivers a, shipments b where a.id=b.driver_id and b.date = currentdate()				
+
+Company.shipments
+
+b) Daily shipment report
+	* Total shipments - categorized by status, time taken for each shipment
+c) 
