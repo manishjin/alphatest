@@ -127,12 +127,7 @@ rails g migration AddAllocationDetailsToShipments Allocated_Truck_Type:string As
 
 	* It created 20160820125555_add_allocation_details_to_shipments.rb
 	
-17) Xavi - 218355064
-Mani-244762094
-NaekoBot - 222455752:AAG7dI4nByMtJuTHbXBByN_YNH-W_nG5wRk
-NaekoChat (local) - 166402393
-
-TransAragonesBot - 266952038:AAFz3TCbKe2UE2cwgySF0l8dwqiTckiAEBI
+17) 
 
 18) Generated model for enquiries
 rails g scaffold enquiries Name:string Email:string Telephone:integer Message:text
@@ -141,6 +136,13 @@ rails g scaffold enquiries Name:string Email:string Telephone:integer Message:te
 rails g migration AddFurtherDetailsToShipments Volume:string OtherClient:boolean OtherDriver:boolean Driver_Name:string
 
 --------------------------------------------
-page-content-wrapper - 	1017x1065
-custom-header - 		1017x429
-custom-header - 		1017x636
+Xavi - 218355064
+Mani-244762094
+
+NaekoBot-> 222455752:AAG7dI4nByMtJuTHbXBByN_YNH-W_nG5wRk
+NaekoChat (local)-> -166402393
+
+NaekoChat with Eugeni Morales-> -156861987
+NaekoChat with Enric Bartolome-> -167270815
+
+TransAragonesBot - 266952038:AAFz3TCbKe2UE2cwgySF0l8dwqiTckiAEBI

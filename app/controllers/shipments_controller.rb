@@ -49,6 +49,12 @@ class ShipmentsController < ApplicationController
     @company = Company.find(params[:company_id])
     @shipment = Shipment.new(shipment_params)
 
+    if !@shipment.Client_ID.blank?
+      @client=Client.find(@shipment.Client_ID)
+      @shipment.Client_Name = @client.Name
+      @shipment.Pickup_Location = @client.Address
+    end
+
     respond_to do |format|
       if @shipment.save
         format.html { redirect_to company_shipments_path(@company) }
@@ -112,6 +118,12 @@ class ShipmentsController < ApplicationController
     def set_shipment
       @company = Company.find(params[:company_id])
       @shipment = Shipment.find(params[:id])
+
+      if !@shipment.Client_ID.blank?
+        @client=Client.find(@shipment.Client_ID)
+        @shipment.Client_Name = @client.Name
+        @shipment.Pickup_Location = @client.Address
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
